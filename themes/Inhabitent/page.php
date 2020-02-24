@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<!-- <div class = "home_page">
+    <img src="" alt="Home Page">
+</div> -->
 
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 

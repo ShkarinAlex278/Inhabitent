@@ -59,10 +59,11 @@ body {
   background-color: #ffffff;
   font-size: 2em;
   border: solid 1px #e1e1e1;
-  font-family: Merriweather;
+  font-family: font-awesome;
   font-size: 16px; }
 
 .main-menu {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,23 +74,3 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none; }
-
-ul a {
-  padding: 25px;
-  color: red;
-  font-size: 20px;
-  margin: 0px; }
-
-p,
-h3,
-h2 {
-  margin: 40px; }
-
-p {
-  line-height: 1.6; }
