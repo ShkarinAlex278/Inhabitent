@@ -1,8 +1,4 @@
 <?php get_header(); ?>
-
-
-
-
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -15,6 +11,18 @@
 </span>
 
         <h1>SHOP STUFF...</h1>
+
+        <div class="shop-sruff">
+            <div class="do-stuff">
+                
+            </div>
+            <div class="eat-stuff"></div>
+            <div class="sleep-stuff"></div>
+            <div class="wear-stuff"></div>
+
+
+
+        </div>
     
     <h2><?php the_title(); ?></h2>
     <h3><?php the_permalink();?></h3>

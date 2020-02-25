@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="container about-page">
+<section class="container-about-page">
 
 <?php if( have_posts() ) :
 
@@ -7,17 +7,14 @@
     while( have_posts() ) :
         the_post(); ?>
     
+
+    
 <div class = 'about-page'>
 <?php the_post_thumbnail();?>
-
+<h1>ABOUT</h1>
 </div>
 
-<h1>ABOUT</h1>
-   
-
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-   
+  
     <?php the_content(); ?>
     
     <!-- Loop ends -->
