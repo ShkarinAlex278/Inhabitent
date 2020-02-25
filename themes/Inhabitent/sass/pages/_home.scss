@@ -176,12 +176,32 @@ footer {
 // End About..
 
 // Single product page...
-.container-single-page {
+// .container-single-page {
+//   width: 100%;
+// }
+
+// .container-single-page img {
+//   width: 30%;
+//   height: auto;
+// }
+
+// Archive Product
+.container-archive-page {
   width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.container-single-page img {
-  width: 30%;
+.product {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.product img {
+  width: 100%;
   height: auto;
 }
 

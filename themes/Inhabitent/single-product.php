@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="container-single-page"> 
+
     
 <?php if( have_posts() ) :
 
@@ -19,6 +19,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-</section>
+
     
 <?php get_footer();?>

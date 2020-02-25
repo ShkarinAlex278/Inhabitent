@@ -1,19 +1,20 @@
 <?php get_header(); ?>
-
+<section class="container-archive-page"> 
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    <h2><?php the_post_thumbnail(); ?></h2>
-    <span class = "price">
-        
+        <div class="product">
+    <?php the_post_thumbnail(); ?>
+    
+    <span class = "price">       
     <?php echo '$' . get_field('price');?>
-
     </span>
+
     <h3><?php the_permalink();?></h3>
     <?php the_content(); ?>
-    
+    </div>
     <!-- Loop ends -->
     <?php endwhile;?>
 
@@ -23,5 +24,6 @@
         <p>No posts found</p>
 <?php endif;?>
 
-    
+</section>    
+
 <?php get_footer();?>
