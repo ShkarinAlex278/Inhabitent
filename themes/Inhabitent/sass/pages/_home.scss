@@ -121,6 +121,7 @@ header {
 .shop-stuff-h1 {
   font-size: 30px;
   text-align: center;
+  margin: 30px;
 }
 
 .shop-sruff {
@@ -137,7 +138,7 @@ header {
   // justify-content: center;
   align-items: center;
   margin: 10px;
-  border: solid 3px red;
+  border: solid 1px lightgrey;
 }
 
 .post-catecory {
@@ -148,6 +149,8 @@ header {
   p {
     margin: 5px;
     text-align: center;
+    line-height: 1.5em;
+    padding: 15px;
   }
   button {
     display: block;
@@ -158,6 +161,22 @@ header {
     border-width: 0px;
     margin: 10px;
     margin-left: 30%;
+  }
+}
+
+.inhabit-jurnal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.jurnals {
+  width: 30%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -229,6 +248,31 @@ footer {
 // }
 
 // Archive Product
+
+h1 {
+  text-align: center;
+  color: green;
+  font-size: 30px;
+}
+
+.jurnal-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // align-items: center;
+  p {
+    margin: 10px;
+    color: green;
+  }
+}
+
+hr {
+  margin: 40px 0px;
+  color: white;
+  border-top: 3px dashed lightgrey;
+}
+
 .container-archive-page {
   width: 100%;
   height: auto;

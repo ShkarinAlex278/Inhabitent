@@ -45,7 +45,7 @@ foreach($terms as $term) :
    <?php 
          echo "<p>";
          echo $term->description;?>  
-   <button type='button'> <?php echo $term->name;?></button> 
+   <button type='button'> <?php echo $term->name;?> STUFF</button> 
     <?php echo "</p>";
     ?>
    </div>
@@ -58,54 +58,29 @@ foreach($terms as $term) :
 
 <div class="inhabit-jurnal">
 
-<?php 
-$terms = get_terms(array(
-'taxonomy' => 'product-type',
-'hide_empty'=>false
-));
-
-
-// echo "<pre>";
-// print_r($terms);
-// echo"</pre>";
-
-//-----
-
-foreach($terms as $term) : 
-    $file_name = $term->slug . '.svg';?>
-    <div class = "post-catecory2">
-     <img src='<?php echo get_template_directory_uri() . "/assets/images/blog-photos/assets\images\blog-photos2.jpg"?>'>
-   <?php 
-
-         echo "<p>";
-         echo $term->description;?>
-   
-   <button type='button'> <?php echo $term->name;?></button> 
-
-    <?php echo "</p>";
-    ?>
-   </div>
-    <?php endforeach;?>
     <!-- End of <div class="shop-sruff"> -->
-    </div> 
+    
 
 <!-- End Inh Jurnal -->
 <!-- Custom POst Loop Starts -->
+<!-- Custom Post Loop Starts -->
 <?php
-$args = array( 
-    'post_type' => 'post', 
-'order' => 'ASC',
-'numberposts'=> 1 ); // Some added...
-   $products = new WP_Query( $args ); // instantiate our object
-?>
-<?php
-   $args = array( 'post_type' => 'product', 'order' => 'ASC' );
+   $args = array( 
+       'post_type' => 'post', 
+       'order' => 'ASC',
+       'numberposts' => 3
+    );
    $product_posts = get_posts( $args ); // returns an array of posts
+
 ?>
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+<div class = "jurnals">
    <?php the_title() ?>
+   <?php the_post_thumbnail() ?>
+   </div>
 <?php endforeach; wp_reset_postdata(); ?>
 
 
+</div> 
     
 <?php get_footer();?>
