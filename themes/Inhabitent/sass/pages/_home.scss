@@ -67,39 +67,62 @@ body {
 header {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  align-items: flex-start;
-}
-
-.logo {
-  width: 5%;
-  padding: 10px;
-  padding-left: 30px;
+  // display: flex;
+  // flex-direction: row;
+  // align-content: space-between;
+  // align-items: flex-start;
 }
 
 .main-menu {
-  width: 100%;
-  padding: 20px;
-  padding-right: 30px;
-}
-
-.main-menu ul {
   display: flex;
-  list-style-type: none;
-  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  .logo {
+    width: 20%;
+    padding-left: 30px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  ul a {
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: none;
+  }
 }
 
-.main-menu ul a {
-  padding: 15px;
-  color: blue;
-  font-size: 20px;
-  margin: 0px;
-}
-
-.main-menu ul a:hover {
-  color: red;
+.main-green {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  .logo {
+    width: 20%;
+    padding-left: 30px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  ul a {
+    padding: 15px;
+    color: green;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: none;
+  }
 }
 
 .font-page {
@@ -122,6 +145,7 @@ header {
   font-size: 30px;
   text-align: center;
   margin: 30px;
+  padding: 0px;
 }
 
 .shop-sruff {
@@ -169,15 +193,160 @@ header {
   height: auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .jurnals {
   width: 30%;
   height: auto;
+  margin: 20px;
   img {
     width: 100%;
     height: auto;
   }
+}
+
+.topic-jurnal {
+  width: 100%;
+  height: 140px;
+  border: solid 2px lightgrey;
+  color: green;
+  font-size: 32px;
+  .journal-date {
+    font-size: 16px;
+    color: black;
+  }
+  button {
+    display: block;
+    margin-left: 30%;
+    background-color: white;
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+  }
+}
+
+.content-adventure {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  border: solid 1px blue;
+  margin-bottom: 10px;
+}
+
+.gering-back {
+  background-position: bottom;
+  background-size: 850px;
+  background-repeat: no-repeat;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  .content-adv {
+    width: 100%;
+    height: 100%;
+  }
+  p {
+    color: white;
+    font-size: 24px;
+    padding: 40px;
+  }
+  button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+
+.beach-bonfire {
+  background-position: center;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  grid-column: 3 / 5;
+  grid-row: 1;
+  p {
+    color: white;
+    font-size: 24px;
+    padding: 40px;
+  }
+  button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+
+.mountain-hikers {
+  background-position: center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  grid-column: 3 / 4;
+  grid-row: 2;
+  p {
+    color: white;
+    font-size: 24px;
+    padding: 40px;
+  }
+  button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+
+.night-sky {
+  background-position: bottom;
+  background-size: 550px;
+  background-repeat: no-repeat;
+  grid-column: 4 / 5;
+  grid-row: 2;
+  p {
+    color: white;
+    font-size: 24px;
+    padding: 40px;
+  }
+  button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+.button-adventure {
+  height: 50%;
+  display: block;
+  background-color: green;
+  border: 1px solid #f8f4f4;
+  color: white;
+  font-size: 16px;
+  padding: 10px 40px;
+  margin: 20px 0px;
 }
 
 // End Home page

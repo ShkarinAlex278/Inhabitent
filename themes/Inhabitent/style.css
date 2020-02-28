@@ -106,47 +106,77 @@ body {
 
 header {
   width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.logo {
-  width: 5%;
-  padding: 10px;
-  padding-left: 30px; }
+  height: auto; }
 
 .main-menu {
-  width: 100%;
-  padding: 20px;
-  padding-right: 30px; }
-
-.main-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px; }
+  .main-menu .logo {
+    width: 20%;
+    padding-left: 30px; }
+  .main-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style-type: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 30px; }
+  .main-menu ul a {
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: none; }
 
-.main-menu ul a {
-  padding: 15px;
-  color: blue;
-  font-size: 20px;
-  margin: 0px; }
-
-.main-menu ul a:hover {
-  color: red; }
+.main-green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px; }
+  .main-green .logo {
+    width: 20%;
+    padding-left: 30px; }
+  .main-green ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style-type: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 30px; }
+  .main-green ul a {
+    padding: 15px;
+    color: green;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: none; }
 
 .font-page {
   width: 100%;
@@ -165,7 +195,8 @@ header {
 .shop-stuff-h1 {
   font-size: 30px;
   text-align: center;
-  margin: 30px; }
+  margin: 30px;
+  padding: 0px; }
 
 .shop-sruff {
   width: 100%;
@@ -222,14 +253,146 @@ header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
 
 .jurnals {
   width: 30%;
-  height: auto; }
+  height: auto;
+  margin: 20px; }
   .jurnals img {
     width: 100%;
     height: auto; }
+
+.topic-jurnal {
+  width: 100%;
+  height: 140px;
+  border: solid 2px lightgrey;
+  color: green;
+  font-size: 32px; }
+  .topic-jurnal .journal-date {
+    font-size: 16px;
+    color: black; }
+  .topic-jurnal button {
+    display: block;
+    margin-left: 30%;
+    background-color: white;
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    color: black;
+    margin: 10px; }
+
+.content-adventure {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  border: solid 1px blue;
+  margin-bottom: 10px; }
+
+.gering-back {
+  background-position: bottom;
+  background-size: 850px;
+  background-repeat: no-repeat;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3; }
+  .gering-back .content-adv {
+    width: 100%;
+    height: 100%; }
+  .gering-back p {
+    color: white;
+    font-size: 24px;
+    padding: 40px; }
+  .gering-back button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px; }
+
+.beach-bonfire {
+  background-position: center;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  grid-column: 3 / 5;
+  grid-row: 1; }
+  .beach-bonfire p {
+    color: white;
+    font-size: 24px;
+    padding: 40px; }
+  .beach-bonfire button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px; }
+
+.mountain-hikers {
+  background-position: center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  grid-column: 3 / 4;
+  grid-row: 2; }
+  .mountain-hikers p {
+    color: white;
+    font-size: 24px;
+    padding: 40px; }
+  .mountain-hikers button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px; }
+
+.night-sky {
+  background-position: bottom;
+  background-size: 550px;
+  background-repeat: no-repeat;
+  grid-column: 4 / 5;
+  grid-row: 2; }
+  .night-sky p {
+    color: white;
+    font-size: 24px;
+    padding: 40px; }
+  .night-sky button {
+    display: block;
+    margin-left: 30%;
+    background-color: black;
+    border: 1px solid #f8f4f4;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 40px; }
+
+.button-adventure {
+  height: 50%;
+  display: block;
+  background-color: green;
+  border: 1px solid #f8f4f4;
+  color: white;
+  font-size: 16px;
+  padding: 10px 40px;
+  margin: 20px 0px; }
 
 footer {
   background-color: yellowgreen;
