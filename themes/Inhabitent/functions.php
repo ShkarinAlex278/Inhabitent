@@ -54,6 +54,21 @@ function inhabitant_post_types(){
         ),
         'menu_icon'=>'dashicons-store'
     ));
+
+    register_post_type('adventure',array( //register_post_type method from https://generatewp.com/
+        'has_archive'=> true,
+        'show_in_rest'=> true,
+        'public'=>true,
+        'supports'=> array('title','editor','thumbnail'),
+        'labels' =>array(
+            'name'=>'Adventure',
+            'add_new_item'=>'Add Newe Adventure',
+            'edit_item'=>'Edit Adventure',
+            'all_items'=>'All Adventure',
+            'singular_name'=>'Adventure'
+        ),
+        'menu_icon'=>'dashicons-admin-site'
+    ));
    
 //Register Customer Taxo
         $labels = array(

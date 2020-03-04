@@ -65,7 +65,7 @@ foreach($terms as $term) :
         <div class = "topic-jurnal"> 
             <p class = "journal-date"> <?php the_date()?> / 0 Comments</p>
    <?php the_title() ?>
-   
+   <?php echo get_terms() ?>
    <button type='button'> 
    <a href="<?php the_permalink() ?>">  
    READ ENTRY
@@ -79,34 +79,36 @@ foreach($terms as $term) :
 
 
 <!-- ADVENTURES start -->
+<h1> LATEST ADVENTURES</h1>
 <?php
    $args = array( 
-       'post_type' => 'post', 
+       'post_type' => 'adventure', 
        'order' => 'ASC',
-       'Categories' => 'Adventures',
-       'numberposts' => -1
+       'numberposts' => 4
     );
    $product_posts = get_posts( $args ); // returns an array of posts
-
-?>
-<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-<div class = "content-adventure">
-
-  
-        <div class = "gering-back"> 
-       
-   <?php the_title() ?>
+   $counter = 1;
+   $containerName = 'Item' . $counter; 
    
-   <?php get_posts?>
-   <button type='button'> 
-   <a href="<?php the_permalink() ?>">  
-   READ ENTRY
-   </a>
+?>
+
+<div class="content-adventure">
+<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+<?php $containerName = 'Item' . $counter; ?>
+    <div class=<?php echo $containerName?> style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_the_post_thumbnail_url()?>)">      
+    
+    <?php $counter++;?>
+
+    <p><?php the_title()?></p>
+        <button type = "click">
+        <a href="<?php the_permalink() ?>">    
+        READ ME
+        </a>
 </button> 
-  
-        </div>
-   </div>
+         </div>
+   
 <?php endforeach; wp_reset_postdata(); ?>
+</div>
 <!-- ADVENTURES End -->
 
     
