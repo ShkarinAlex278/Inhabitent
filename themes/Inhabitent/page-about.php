@@ -9,11 +9,10 @@
     
 
     
-<div class = 'about-page'>
-<?php the_post_thumbnail();?>
+<div class = 'about-page' style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/about-hero.jpg"?>)">
+
 <h1>ABOUT</h1>
 </div>
-
   
     <?php the_content(); ?>
     

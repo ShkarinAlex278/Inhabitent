@@ -173,7 +173,7 @@ header {
     padding-right: 30px; }
   .main-green ul a {
     padding: 15px;
-    color: green;
+    color: #1c7d6b;
     font-size: 20px;
     margin: 0px;
     text-decoration: none; }
@@ -237,7 +237,7 @@ header {
 .post-catecory button {
   display: block;
   margin-left: 30%;
-  background-color: green;
+  background-color: #1c7d6b;
   padding: 10px;
   color: white;
   border-width: 0px;
@@ -263,6 +263,12 @@ header {
   -ms-flex-line-pack: justify;
       align-content: space-between; }
 
+h1,
+h2 {
+  color: black;
+  text-align: center;
+  padding: 20px; }
+
 .jurnals {
   width: 30%;
   height: auto;
@@ -275,7 +281,7 @@ header {
   width: 100%;
   height: 140px;
   border: solid 2px lightgrey;
-  color: green;
+  color: #1c7d6b;
   font-size: 32px; }
   .topic-jurnal .journal-date {
     font-size: 16px;
@@ -288,6 +294,9 @@ header {
     padding: 10px;
     color: black;
     margin: 10px; }
+    .topic-jurnal button a {
+      text-decoration: none;
+      color: black; }
 
 .content-adventure {
   width: 100%;
@@ -295,23 +304,39 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  border: solid 1px blue;
   margin-bottom: 10px; }
-
-.gering-back {
-  background-position: bottom;
-  background-size: 850px;
-  background-repeat: no-repeat;
-  grid-column: 1 / 3;
-  grid-row: 1 / 3; }
-  .gering-back .content-adv {
-    width: 100%;
-    height: 100%; }
-  .gering-back p {
+  .content-adventure p {
     color: white;
     font-size: 24px;
     padding: 40px; }
-  .gering-back button {
+  .content-adventure .gering-back {
+    background-position: bottom;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3; }
+    .content-adventure .gering-back .content-adv {
+      width: 100%;
+      height: 100%; }
+  .content-adventure .beach-bonfire {
+    background-position: center;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    grid-column: 3 / 5;
+    grid-row: 1; }
+  .content-adventure .mountain-hikers {
+    background-position: center;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 2; }
+  .content-adventure .night-sky {
+    background-position: bottom;
+    background-size: 550px;
+    background-repeat: no-repeat;
+    grid-column: 4 / 5;
+    grid-row: 2; }
+  .content-adventure button {
     display: block;
     margin-left: 30%;
     background-color: black;
@@ -320,74 +345,14 @@ header {
     margin: 10px;
     font-size: 16px;
     padding: 10px 40px; }
-
-.beach-bonfire {
-  background-position: center;
-  background-size: 700px;
-  background-repeat: no-repeat;
-  grid-column: 3 / 5;
-  grid-row: 1; }
-  .beach-bonfire p {
-    color: white;
-    font-size: 24px;
-    padding: 40px; }
-  .beach-bonfire button {
-    display: block;
-    margin-left: 30%;
-    background-color: black;
-    border: 1px solid #f8f4f4;
-    padding: 10px;
-    color: white;
-    margin: 10px;
-    font-size: 16px;
-    padding: 10px 40px; }
-
-.mountain-hikers {
-  background-position: center;
-  background-size: 450px;
-  background-repeat: no-repeat;
-  grid-column: 3 / 4;
-  grid-row: 2; }
-  .mountain-hikers p {
-    color: white;
-    font-size: 24px;
-    padding: 40px; }
-  .mountain-hikers button {
-    display: block;
-    margin-left: 30%;
-    background-color: black;
-    border: 1px solid #f8f4f4;
-    padding: 10px;
-    color: white;
-    margin: 10px;
-    font-size: 16px;
-    padding: 10px 40px; }
-
-.night-sky {
-  background-position: bottom;
-  background-size: 550px;
-  background-repeat: no-repeat;
-  grid-column: 4 / 5;
-  grid-row: 2; }
-  .night-sky p {
-    color: white;
-    font-size: 24px;
-    padding: 40px; }
-  .night-sky button {
-    display: block;
-    margin-left: 30%;
-    background-color: black;
-    border: 1px solid #f8f4f4;
-    padding: 10px;
-    color: white;
-    margin: 10px;
-    font-size: 16px;
-    padding: 10px 40px; }
+    .content-adventure button a {
+      text-decoration: none;
+      color: white; }
 
 .button-adventure {
   height: 50%;
   display: block;
-  background-color: green;
+  background-color: #1c7d6b;
   border: 1px solid #f8f4f4;
   color: white;
   font-size: 16px;
@@ -395,8 +360,98 @@ header {
   margin: 20px 0px; }
 
 footer {
-  background-color: yellowgreen;
-  color: white; }
+  width: 100%;
+  height: auto; }
+  footer .foorer-content {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    padding: 15px 40px;
+    text-decoration: none;
+    list-style-type: none; }
+  footer img {
+    width: 25%;
+    position: relative;
+    padding-bottom: 10%; }
+  footer #text-4 {
+    width: 30%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    line-height: 1.5em; }
+    footer #text-4 h2 {
+      color: goldenrod; }
+    footer #text-4 .contact-icons {
+      width: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      padding: 5px;
+      width: 20%; }
+      footer #text-4 .contact-icons p {
+        padding: 5px; }
+  footer #text-6 {
+    width: 30%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 1.5em;
+    padding: 10px; }
+    footer #text-6 h2 {
+      color: goldenrod; }
+    footer #text-6 .fa {
+      width: 2px; }
+  footer #archives-4 {
+    display: none; }
+  footer .back {
+    font-size: 20px;
+    color: white;
+    text-align: center; }
 
 .container-about-page {
   width: 100%;
@@ -414,50 +469,40 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.about-page {
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -60px;
-  z-index: -1; }
-
-.about-page img {
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 20% 0;
-     object-position: 20% 0; }
-
-.about-page h1 {
-  position: relative;
-  color: blue;
-  font-size: 48px;
-  top: -400px; }
-
-.container-about-page p {
-  width: 65%;
-  line-height: 1.5em; }
-
-.has-text-align-center {
-  text-align: center;
-  font-size: 24px;
-  padding: 10px 50px; }
+  .container-about-page .about-page {
+    width: 100%;
+    height: 600px;
+    background-position: bottom;
+    background-size: 1120px;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -60px;
+    z-index: -1; }
+  .container-about-page h1 {
+    position: relative;
+    color: white;
+    font-size: 48px;
+    padding-top: 23%; }
+  .container-about-page p {
+    width: 65%;
+    line-height: 1.5em;
+    padding: 10px 0px; }
+  .container-about-page .has-text-align-center {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 50px; }
 
 h1 {
-  text-align: center;
-  color: green;
   font-size: 30px; }
 
 .jurnal-menu {
@@ -474,7 +519,7 @@ h1 {
           justify-content: center; }
   .jurnal-menu p {
     margin: 10px;
-    color: green; }
+    color: #1c7d6b; }
 
 hr {
   margin: 40px 0px;
@@ -506,3 +551,321 @@ hr {
 
 .price {
   font-size: 24px; }
+
+.home-page {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top: solid 0.1px #e2dfdf; }
+  .home-page .journal-page {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px; }
+    .home-page .journal-page .picture-content {
+      width: 100%;
+      height: 550px;
+      background-position: bottom;
+      background-size: 850px;
+      background-repeat: no-repeat;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .home-page .journal-page .picture-content h1 {
+        width: 50%;
+        background-color: #1c7d6b;
+        color: white;
+        font-size: 36px;
+        margin-top: 5%; }
+      .home-page .journal-page .picture-content h2 {
+        width: 40%;
+        background-color: #1c7d6b;
+        color: white;
+        font-size: 24px;
+        margin-left: 58.7%;
+        margin-top: 40%;
+        text-align: right;
+        padding: 5px; }
+    .home-page .journal-page p {
+      line-height: 1.5em;
+      height: auto; }
+    .home-page .journal-page button {
+      width: 18%;
+      display: block;
+      margin-left: 30%;
+      background-color: white;
+      border: 1px solid #0a0a0a;
+      padding: 10px;
+      color: black;
+      margin: 10px; }
+      .home-page .journal-page button a {
+        text-decoration: none;
+        color: red; }
+  .home-page .contact-journel-page {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 40px;
+    border-left: solid 0.1px #e2dfdf; }
+    .home-page .contact-journel-page h2 {
+      padding: 10px 0px; }
+    .home-page .contact-journel-page #text-4 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      line-height: 1.5em; }
+      .home-page .contact-journel-page #text-4 h2 {
+        color: black; }
+      .home-page .contact-journel-page #text-4 p {
+        color: #1c7d6b; }
+        .home-page .contact-journel-page #text-4 p i {
+          color: black; }
+      .home-page .contact-journel-page #text-4 .contact-icons {
+        width: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+        padding: 5px;
+        width: 20%; }
+        .home-page .contact-journel-page #text-4 .contact-icons p {
+          color: black;
+          padding: 5px; }
+    .home-page .contact-journel-page #text-6 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      line-height: 1.5em;
+      padding: 10px; }
+      .home-page .contact-journel-page #text-6 h2 {
+        color: black; }
+      .home-page .contact-journel-page #text-6 .fa {
+        width: 2px; }
+    .home-page .contact-journel-page #archives-4 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      line-height: 1.5em;
+      padding: 10px; }
+      .home-page .contact-journel-page #archives-4 a {
+        color: #1c7d6b;
+        text-decoration: none; }
+
+.find-page {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top: solid 0.1px #e2dfdf; }
+  .find-page .find-us-page {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 40px; }
+    .find-page .find-us-page h2 {
+      width: 100%;
+      color: black;
+      font-size: 24px;
+      margin-top: 5%; }
+    .find-page .find-us-page iframe {
+      width: 100%;
+      height: 250px;
+      padding: 20px 0px; }
+    .find-page .find-us-page p {
+      line-height: 1.5em;
+      height: auto; }
+    .find-page .find-us-page input[type='submit'] {
+      width: 15%;
+      display: block;
+      margin-left: 30%;
+      background-color: #1c7d6b;
+      border: none;
+      padding: 10px;
+      color: white;
+      margin: 10px; }
+    .find-page .find-us-page input[type='text'],
+    .find-page .find-us-page input[type='email'] {
+      width: 50%;
+      font-size: 24px;
+      background-color: #e2dfdf; }
+    .find-page .find-us-page textarea {
+      width: 100%;
+      background-color: #e2dfdf; }
+  .find-page .contact-find-us-page {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 40px;
+    border-left: solid 0.1px #e2dfdf; }
+    .find-page .contact-find-us-page h2 {
+      padding: 10px 0px; }
+    .find-page .contact-find-us-page #text-4 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      line-height: 1.5em; }
+      .find-page .contact-find-us-page #text-4 h2 {
+        color: black; }
+      .find-page .contact-find-us-page #text-4 p {
+        color: #1c7d6b; }
+        .find-page .contact-find-us-page #text-4 p i {
+          color: black; }
+      .find-page .contact-find-us-page #text-4 .contact-icons {
+        width: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+        padding: 5px;
+        width: 20%; }
+        .find-page .contact-find-us-page #text-4 .contact-icons p {
+          color: black;
+          padding: 5px; }
+    .find-page .contact-find-us-page #text-6 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      line-height: 1.5em;
+      padding: 10px; }
+      .find-page .contact-find-us-page #text-6 h2 {
+        color: black; }
+      .find-page .contact-find-us-page #text-6 .fa {
+        width: 2px; }
+    .find-page .contact-find-us-page #archives-4 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      line-height: 1.5em;
+      padding: 10px; }
+      .find-page .contact-find-us-page #archives-4 a {
+        color: #1c7d6b;
+        text-decoration: none; }

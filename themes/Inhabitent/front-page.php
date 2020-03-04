@@ -66,41 +66,74 @@ foreach($terms as $term) :
         <div class = "topic-jurnal"> 
             <p class = "journal-date"> <?php the_date()?> / 0 Comments</p>
    <?php the_title() ?>
-   <button type='button'> READ ENTRY</button> 
+   
+   <button type='button'> 
+   <a href="<?php the_permalink() ?>">  
+   READ ENTRY
+   </a>
+</button> 
+  
         </div>
    </div>
 <?php endforeach; wp_reset_postdata(); ?>
 </div> <!-- End Jurnal div -->
 
+
+<!-- ADVENTURES start -->
+<?php
+   $args = array( 
+       'post_type' => 'post', 
+       'order' => 'ASC',
+       'categories' => 'Categories',
+       'numberposts' => 1
+    );
+   $product_posts = get_posts( $args ); ?>
+   <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 <div class="adventures">
     <h1> LATEST ADVENTURES</h1>
     <div class="content-adventure">
         <div class="gering-back" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/adventure-photos/canoe-girl.jpg"?>)">
        
         <p> Hello World!!!</p>
-        <button type = "click">READ ME</button>
+        <button type = "click">
+        <a href="<?php the_permalink() ?>">    
+        READ ME
+        </a>
         
         </div>
         <div class="beach-bonfire" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/adventure-photos/beach-bonfire.jpg"?>)">
         <p> Hello World!!!</p>
-        <button type = "click">READ ME</button>    
+        
+        <button type = "click">
+        <a href="<?php the_permalink() ?>">    
+        READ ME
+        </a>
+    </button>
+        
             
         </div>
         <div class="mountain-hikers" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/adventure-photos/mountain-hikers.jpg"?>)">
         <p> Hello World!!!</p>
-        <button type = "click">READ ME</button>
+        <button type = "click">
+        <a href="<?php the_permalink() ?>">    
+        READ ME
+        </a>
         </div>
         <div class="night-sky" style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/adventure-photos/night-sky.jpg"?>)">
         <p> Hello World!!!</p>
-        <button type = "click">READ ME</button>
+        <button type = "click">
+        <a href="<?php the_permalink() ?>">    
+        READ ME
+        </a>
          </div>
       
     </div>
+    <a href="<?php the_permalink() ?>">
     <button type = "click" class = "button-adventure">MORE ADVENTURES</button>
-
+    </a>
+    <?php endforeach; wp_reset_postdata(); ?>
 </div>
-
-
+<!-- ADVENTURES End -->
 
     
 <?php get_footer();?>

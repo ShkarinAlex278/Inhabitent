@@ -26,7 +26,7 @@ function inhabitant_widgets() {
     register_sidebar(array(
         'name' =>'Sidebar Info',
         'id'=>'sidebar-info',
-        'description'=>'Add atext blog with your business hours, contact us, etc',
+        'description'=>'Add a text blog with your business hours, contact us, etc',
         'before_widgets'=>'<aside id="%1$s">',
         'after_widgets'=>'<aside>',
         'before_title'=>'<h2 class = "widgets=hours">',
@@ -58,7 +58,6 @@ function inhabitant_post_types(){
         ),
         'menu_icon'=>'dashicons-store'
     ));
-
    
 //Register Customer Taxo
         $labels = array(
