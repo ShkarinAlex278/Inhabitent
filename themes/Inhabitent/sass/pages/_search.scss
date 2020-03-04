@@ -1,0 +1,57 @@
+// Journal Page
+.search-result {
+  //   background-color: blue;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-top: solid 0.1px rgb(226, 223, 223);
+  .results {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    h1 {
+      width: 50%;
+      background-color: #1c7d6b;
+      color: white;
+      font-size: 36px;
+      margin-top: 5%;
+    }
+
+    h2 {
+      width: 100%;
+      color: #1c7d6b;
+      font-size: 24px;
+      text-align: left;
+      padding: 5px;
+    }
+
+    p {
+      line-height: 1.5em;
+      height: auto;
+    }
+
+    button {
+      width: 18%;
+      display: block;
+      margin-left: 30%;
+      background-color: white;
+      border: 1px solid #0a0a0a;
+      padding: 10px;
+      color: black;
+      margin: 10px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    hr {
+      //   color: red;
+      border-top: solid 0.1px rgb(226, 223, 223);
+    }
+  }
+}
+// End of Journal Page

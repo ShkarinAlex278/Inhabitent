@@ -24,7 +24,7 @@
         <p>No posts found</p>
 <?php endif;?>
 
-<div class="contact-find-us-page">
+<div class="contact-info">
 <?php dynamic_sidebar('sidebar-info'); ?> 
 </div>
 

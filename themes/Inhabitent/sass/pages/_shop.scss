@@ -1,5 +1,6 @@
 // Journal Page
 .home-page {
+  //   background-color: blue;
   width: 100%;
   height: auto;
   display: flex;
@@ -42,6 +43,9 @@
     p {
       line-height: 1.5em;
       height: auto;
+      #more {
+        display: none;
+      }
     }
 
     button {
@@ -53,86 +57,6 @@
       padding: 10px;
       color: black;
       margin: 10px;
-      a {
-        text-decoration: none;
-        color: red;
-      }
-    }
-  }
-
-  .contact-journel-page {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 40px;
-    border-left: solid 0.1px rgb(226, 223, 223);
-    h2 {
-      padding: 10px 0px;
-    }
-
-    #text-4 {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      align-content: space-between;
-      line-height: 1.5em;
-      h2 {
-        color: black;
-      }
-      p {
-        color: #1c7d6b;
-        i {
-          color: black;
-        }
-      }
-
-      .contact-icons {
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-        padding: 5px;
-        width: 20%;
-        p {
-          color: black;
-          padding: 5px;
-        }
-      }
-    }
-    #text-6 {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-content: space-between;
-      align-items: flex-start;
-      line-height: 1.5em;
-      padding: 10px;
-      h2 {
-        color: black;
-      }
-      .fa {
-        width: 2px;
-      }
-    }
-    #archives-4 {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-content: space-between;
-      align-items: flex-start;
-      line-height: 1.5em;
-      padding: 10px;
-      a {
-        color: #1c7d6b;
-        text-decoration: none;
-      }
     }
   }
 }

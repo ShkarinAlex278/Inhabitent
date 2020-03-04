@@ -394,42 +394,13 @@ h2 {
 
 .content-adventure {
   width: 100%;
-  height: 500px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  height: auto;
   grid-gap: 10px;
   margin-bottom: 10px; }
   .content-adventure p {
     color: white;
     font-size: 24px;
     padding: 40px; }
-  .content-adventure .gering-back {
-    background-position: bottom;
-    background-size: 850px;
-    background-repeat: no-repeat;
-    grid-column: 1 / 3;
-    grid-row: 1 / 3; }
-    .content-adventure .gering-back .content-adv {
-      width: 100%;
-      height: 100%; }
-  .content-adventure .beach-bonfire {
-    background-position: center;
-    background-size: 700px;
-    background-repeat: no-repeat;
-    grid-column: 3 / 5;
-    grid-row: 1; }
-  .content-adventure .mountain-hikers {
-    background-position: center;
-    background-size: 450px;
-    background-repeat: no-repeat;
-    grid-column: 3 / 4;
-    grid-row: 2; }
-  .content-adventure .night-sky {
-    background-position: bottom;
-    background-size: 550px;
-    background-repeat: no-repeat;
-    grid-column: 4 / 5;
-    grid-row: 2; }
   .content-adventure button {
     display: block;
     margin-left: 30%;
@@ -704,6 +675,108 @@ hr {
         color: #1c7d6b;
         text-decoration: none; }
 
+.contact-info {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 40px;
+  border-left: solid 0.1px #e2dfdf; }
+  .contact-info h2 {
+    padding: 10px 0px; }
+  .contact-info #text-4 {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    line-height: 1.5em; }
+    .contact-info #text-4 h2 {
+      color: black; }
+    .contact-info #text-4 p {
+      color: #1c7d6b; }
+      .contact-info #text-4 p i {
+        color: black; }
+    .contact-info #text-4 .contact-icons {
+      width: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      padding: 5px;
+      width: 20%; }
+      .contact-info #text-4 .contact-icons p {
+        color: black;
+        padding: 5px; }
+  .contact-info #text-6 {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 1.5em;
+    padding: 10px; }
+    .contact-info #text-6 h2 {
+      color: black; }
+    .contact-info #text-6 .fa {
+      width: 2px; }
+  .contact-info #archives-4 {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 1.5em;
+    padding: 10px; }
+    .contact-info #archives-4 a {
+      color: #1c7d6b;
+      text-decoration: none; }
+
 .home-page {
   width: 100%;
   height: auto;
@@ -756,6 +829,8 @@ hr {
     .home-page .journal-page p {
       line-height: 1.5em;
       height: auto; }
+      .home-page .journal-page p #more {
+        display: none; }
     .home-page .journal-page button {
       width: 18%;
       display: block;
@@ -765,11 +840,20 @@ hr {
       padding: 10px;
       color: black;
       margin: 10px; }
-      .home-page .journal-page button a {
-        text-decoration: none;
-        color: red; }
-  .home-page .contact-journel-page {
-    width: 20%;
+
+.search-result {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top: solid 0.1px #e2dfdf; }
+  .search-result .results {
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -777,95 +861,44 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 50px 40px;
-    border-left: solid 0.1px #e2dfdf; }
-    .home-page .contact-journel-page h2 {
-      padding: 10px 0px; }
-    .home-page .contact-journel-page #text-4 {
+    padding: 30px; }
+    .search-result .results h1 {
+      width: 50%;
+      background-color: #1c7d6b;
+      color: white;
+      font-size: 36px;
+      margin-top: 5%; }
+    .search-result .results h2 {
       width: 100%;
-      height: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      line-height: 1.5em; }
-      .home-page .contact-journel-page #text-4 h2 {
-        color: black; }
-      .home-page .contact-journel-page #text-4 p {
-        color: #1c7d6b; }
-        .home-page .contact-journel-page #text-4 p i {
-          color: black; }
-      .home-page .contact-journel-page #text-4 .contact-icons {
-        width: 100px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-line-pack: justify;
-            align-content: space-between;
-        padding: 5px;
-        width: 20%; }
-        .home-page .contact-journel-page #text-4 .contact-icons p {
-          color: black;
-          padding: 5px; }
-    .home-page .contact-journel-page #text-6 {
-      width: 100%;
-      height: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
+      color: #1c7d6b;
+      font-size: 24px;
+      text-align: left;
+      padding: 5px; }
+    .search-result .results p {
       line-height: 1.5em;
-      padding: 10px; }
-      .home-page .contact-journel-page #text-6 h2 {
+      height: auto; }
+    .search-result .results button {
+      width: 18%;
+      display: block;
+      margin-left: 30%;
+      background-color: white;
+      border: 1px solid #0a0a0a;
+      padding: 10px;
+      color: black;
+      margin: 10px; }
+      .search-result .results button a {
+        text-decoration: none;
         color: black; }
-      .home-page .contact-journel-page #text-6 .fa {
-        width: 2px; }
-    .home-page .contact-journel-page #archives-4 {
-      width: 100%;
-      height: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      line-height: 1.5em;
-      padding: 10px; }
-      .home-page .contact-journel-page #archives-4 a {
-        color: #1c7d6b;
-        text-decoration: none; }
+    .search-result .results hr {
+      border-top: solid 0.1px #e2dfdf; }
+
+.bottons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
