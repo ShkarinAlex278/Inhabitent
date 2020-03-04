@@ -44,7 +44,7 @@ foreach($terms as $term) :
     <!-- End of <div class="shop-sruff"> -->
     </div> 
 
-    <h1>INHABITENT JURNAL</h1>
+    <h1>INHABITENT JOURNAL</h1>
 <!-- INhabet Jurnal.. -->
 
 <div class="inhabit-jurnal">

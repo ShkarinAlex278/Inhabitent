@@ -54,56 +54,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: 'Raleway Medium Italic';
-  src: url("../fonts/Raleway-MediumItalic.woff2") format("woff2"), url("../fonts/Raleway-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Raleway Light';
-  src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Raleway Medium';
-  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Raleway';
-  src: url("../fonts/Raleway-LightItalic.woff2") format("woff2"), url("../fonts/Raleway-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Playfair Display Italic';
-  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Playfair Display Bold';
-  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-body {
-  width: 1120px;
-  height: auto;
-  font-size: 2em;
-  border: solid 1px #e1e1e1;
-  font-family: Raleway Light;
-  font-size: 16px; }
-
 header {
   width: 100%;
   height: auto; }
@@ -177,6 +127,150 @@ header {
     font-size: 20px;
     margin: 0px;
     text-decoration: none; }
+
+footer {
+  width: 100%;
+  height: auto; }
+  footer .foorer-content {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    padding: 15px 40px;
+    text-decoration: none;
+    list-style-type: none; }
+  footer img {
+    width: 25%;
+    position: relative;
+    padding-bottom: 10%; }
+  footer #text-4 {
+    width: 30%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    line-height: 1.5em; }
+    footer #text-4 h2 {
+      color: goldenrod; }
+    footer #text-4 .contact-icons {
+      width: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      padding: 5px;
+      width: 20%; }
+      footer #text-4 .contact-icons p {
+        padding: 5px; }
+  footer #text-6 {
+    width: 30%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 1.5em;
+    padding: 10px; }
+    footer #text-6 h2 {
+      color: goldenrod; }
+    footer #text-6 .fa {
+      width: 2px; }
+  footer #archives-4 {
+    display: none; }
+  footer .back {
+    font-size: 20px;
+    color: white;
+    text-align: center; }
+
+@font-face {
+  font-family: 'Raleway Medium Italic';
+  src: url("../fonts/Raleway-MediumItalic.woff2") format("woff2"), url("../fonts/Raleway-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-LightItalic.woff2") format("woff2"), url("../fonts/Raleway-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+body {
+  width: 1120px;
+  height: auto;
+  font-size: 2em;
+  border: solid 1px #e1e1e1;
+  font-family: Raleway Light;
+  font-size: 16px; }
 
 .font-page {
   width: 100%;
@@ -359,99 +453,55 @@ h2 {
   padding: 10px 40px;
   margin: 20px 0px; }
 
-footer {
+h1 {
+  font-size: 30px; }
+
+.jurnal-menu {
   width: 100%;
-  height: auto; }
-  footer .foorer-content {
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    padding: 15px 40px;
-    text-decoration: none;
-    list-style-type: none; }
-  footer img {
-    width: 25%;
-    position: relative;
-    padding-bottom: 10%; }
-  footer #text-4 {
-    width: 30%;
-    height: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    line-height: 1.5em; }
-    footer #text-4 h2 {
-      color: goldenrod; }
-    footer #text-4 .contact-icons {
-      width: 100px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      padding: 5px;
-      width: 20%; }
-      footer #text-4 .contact-icons p {
-        padding: 5px; }
-  footer #text-6 {
-    width: 30%;
-    height: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    line-height: 1.5em;
-    padding: 10px; }
-    footer #text-6 h2 {
-      color: goldenrod; }
-    footer #text-6 .fa {
-      width: 2px; }
-  footer #archives-4 {
-    display: none; }
-  footer .back {
-    font-size: 20px;
-    color: white;
-    text-align: center; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .jurnal-menu p {
+    margin: 10px;
+    color: #1c7d6b; }
+
+hr {
+  margin: 40px 0px;
+  color: white;
+  border-top: 3px dashed lightgrey; }
+
+.container-archive-page {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px; }
+
+.product {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.product img {
+  width: 100%;
+  height: auto;
+  padding: 0px; }
+
+.price {
+  font-size: 24px; }
 
 .container-about-page {
   width: 100%;
@@ -502,11 +552,9 @@ footer {
     font-size: 24px;
     padding: 10px 50px; }
 
-h1 {
-  font-size: 30px; }
-
-.jurnal-menu {
+.find-page {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,43 +562,147 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .jurnal-menu p {
-    margin: 10px;
-    color: #1c7d6b; }
-
-hr {
-  margin: 40px 0px;
-  color: white;
-  border-top: 3px dashed lightgrey; }
-
-.container-archive-page {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 50px; }
-
-.product {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.product img {
-  width: 100%;
-  height: auto;
-  padding: 0px; }
-
-.price {
-  font-size: 24px; }
+  border-top: solid 0.1px #e2dfdf; }
+  .find-page .find-us-page {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 40px; }
+    .find-page .find-us-page h2 {
+      width: 100%;
+      color: black;
+      font-size: 24px;
+      margin-top: 5%; }
+    .find-page .find-us-page iframe {
+      width: 100%;
+      height: 250px;
+      padding: 20px 0px; }
+    .find-page .find-us-page p {
+      line-height: 1.5em;
+      height: auto; }
+    .find-page .find-us-page input[type='submit'] {
+      width: 15%;
+      display: block;
+      margin-left: 30%;
+      background-color: #1c7d6b;
+      border: none;
+      padding: 10px;
+      color: white;
+      margin: 10px; }
+    .find-page .find-us-page input[type='text'],
+    .find-page .find-us-page input[type='email'] {
+      width: 50%;
+      font-size: 24px;
+      background-color: #e2dfdf; }
+    .find-page .find-us-page textarea {
+      width: 100%;
+      background-color: #e2dfdf; }
+  .find-page .contact-find-us-page {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 40px;
+    border-left: solid 0.1px #e2dfdf; }
+    .find-page .contact-find-us-page h2 {
+      padding: 10px 0px; }
+    .find-page .contact-find-us-page #text-4 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      line-height: 1.5em; }
+      .find-page .contact-find-us-page #text-4 h2 {
+        color: black; }
+      .find-page .contact-find-us-page #text-4 p {
+        color: #1c7d6b; }
+        .find-page .contact-find-us-page #text-4 p i {
+          color: black; }
+      .find-page .contact-find-us-page #text-4 .contact-icons {
+        width: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+        padding: 5px;
+        width: 20%; }
+        .find-page .contact-find-us-page #text-4 .contact-icons p {
+          color: black;
+          padding: 5px; }
+    .find-page .contact-find-us-page #text-6 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      line-height: 1.5em;
+      padding: 10px; }
+      .find-page .contact-find-us-page #text-6 h2 {
+        color: black; }
+      .find-page .contact-find-us-page #text-6 .fa {
+        width: 2px; }
+    .find-page .contact-find-us-page #archives-4 {
+      width: 100%;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      line-height: 1.5em;
+      padding: 10px; }
+      .find-page .contact-find-us-page #archives-4 a {
+        color: #1c7d6b;
+        text-decoration: none; }
 
 .home-page {
   width: 100%;
@@ -715,157 +867,5 @@ hr {
       line-height: 1.5em;
       padding: 10px; }
       .home-page .contact-journel-page #archives-4 a {
-        color: #1c7d6b;
-        text-decoration: none; }
-
-.find-page {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-top: solid 0.1px #e2dfdf; }
-  .find-page .find-us-page {
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 10px 40px; }
-    .find-page .find-us-page h2 {
-      width: 100%;
-      color: black;
-      font-size: 24px;
-      margin-top: 5%; }
-    .find-page .find-us-page iframe {
-      width: 100%;
-      height: 250px;
-      padding: 20px 0px; }
-    .find-page .find-us-page p {
-      line-height: 1.5em;
-      height: auto; }
-    .find-page .find-us-page input[type='submit'] {
-      width: 15%;
-      display: block;
-      margin-left: 30%;
-      background-color: #1c7d6b;
-      border: none;
-      padding: 10px;
-      color: white;
-      margin: 10px; }
-    .find-page .find-us-page input[type='text'],
-    .find-page .find-us-page input[type='email'] {
-      width: 50%;
-      font-size: 24px;
-      background-color: #e2dfdf; }
-    .find-page .find-us-page textarea {
-      width: 100%;
-      background-color: #e2dfdf; }
-  .find-page .contact-find-us-page {
-    width: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 50px 40px;
-    border-left: solid 0.1px #e2dfdf; }
-    .find-page .contact-find-us-page h2 {
-      padding: 10px 0px; }
-    .find-page .contact-find-us-page #text-4 {
-      width: 100%;
-      height: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      line-height: 1.5em; }
-      .find-page .contact-find-us-page #text-4 h2 {
-        color: black; }
-      .find-page .contact-find-us-page #text-4 p {
-        color: #1c7d6b; }
-        .find-page .contact-find-us-page #text-4 p i {
-          color: black; }
-      .find-page .contact-find-us-page #text-4 .contact-icons {
-        width: 100px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-line-pack: justify;
-            align-content: space-between;
-        padding: 5px;
-        width: 20%; }
-        .find-page .contact-find-us-page #text-4 .contact-icons p {
-          color: black;
-          padding: 5px; }
-    .find-page .contact-find-us-page #text-6 {
-      width: 100%;
-      height: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      line-height: 1.5em;
-      padding: 10px; }
-      .find-page .contact-find-us-page #text-6 h2 {
-        color: black; }
-      .find-page .contact-find-us-page #text-6 .fa {
-        width: 2px; }
-    .find-page .contact-find-us-page #archives-4 {
-      width: 100%;
-      height: auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      line-height: 1.5em;
-      padding: 10px; }
-      .find-page .contact-find-us-page #archives-4 a {
         color: #1c7d6b;
         text-decoration: none; }

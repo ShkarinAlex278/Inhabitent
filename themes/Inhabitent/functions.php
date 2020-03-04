@@ -5,18 +5,17 @@ function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
     wp_enqueue_style('font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-    }
+    wp_enqueue_script('inhabitant_search_toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array('jquery'),NULL, true);
+
+}
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
 
 //Adds theme support - ex: title tag
 function inhabitant_features() {
     add_theme_support('title-tag');
-
     add_theme_support('post-thumbnails');
-
     register_nav_menus (array('main' =>'Main Menu'));
-
 }
 
 add_action('after_setup_theme', 'inhabitant_features');
@@ -32,7 +31,6 @@ function inhabitant_widgets() {
         'before_title'=>'<h2 class = "widgets=hours">',
         'after_title'=>'</h2>'
     ));
-
 }
 
 add_action('widgets_init', 'inhabitant_widgets');
@@ -40,8 +38,6 @@ add_action('widgets_init', 'inhabitant_widgets');
 //
 
 // Hook into the 'init' action
-
-
 
 function inhabitant_post_types(){
     register_post_type('product',array( //register_post_type method from https://generatewp.com/
@@ -88,12 +84,19 @@ function inhabitant_post_types(){
             'show_in_nav_menus'=> true,
             'show_tagcloud'=> true,
         );
-    
-        register_taxonomy( 'product-type', array( 'product' ), $args );    
-    
+            register_taxonomy( 'product-type', array( 'product' ), $args );        
 }
 
 add_action( 'init', 'inhabitant_post_types' );
 
+
+function inhabitent_adjust_product($query) {
+    if(!is_admin() && is_post_type_archive('product')) :
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+    endif;
+}
+
+add_action('pre_get_posts', 'inhabitent_adjust_product');
 
 ?>

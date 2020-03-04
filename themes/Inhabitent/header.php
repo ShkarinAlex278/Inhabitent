@@ -17,6 +17,10 @@ get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.
  </a> 
 
 <?php wp_nav_menu(array ('theme_lacation'=>'main'))?>
+<div class="header-search">
+<?php get_search_form();?> 
+<!-- Call ohter form -->
+</div>
 </nav>
 </header>
 

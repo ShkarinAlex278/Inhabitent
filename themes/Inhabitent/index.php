@@ -2,7 +2,7 @@
 
 
 <div class="home-page">
-<hr>
+    
 <div class="journal-page">
 
 <?php if( have_posts() ) :
