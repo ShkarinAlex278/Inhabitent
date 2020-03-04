@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<h1>Product Type...</h1>
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 

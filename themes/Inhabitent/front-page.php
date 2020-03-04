@@ -36,7 +36,7 @@ foreach($terms as $term) :
    <?php 
          echo "<p>";
          echo $term->description;?>  
-         <a href="<?php the_permalink() ?>"> 
+         <a href="<?php echo $term->taxonomy?>/<?php echo $term->slug?>"> 
    <button type='button'> <?php echo $term->name;?> STUFF</button> </a>
     <?php echo "</p>";
     ?>
