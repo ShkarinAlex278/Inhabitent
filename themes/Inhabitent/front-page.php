@@ -9,9 +9,7 @@
 <img src="<?php echo get_template_directory_uri()?>/assets/images/home-hero3.jpg">
 <img class = 'logotype' src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-full.svg">
 </span>
-
         <h1 class = "shop-stuff-h1">SHOP STUFF</h1>
-
         <div class="shop-sruff">  
     
     <?php the_content(); ?>
@@ -47,7 +45,7 @@ foreach($terms as $term) :
     </div> 
 
     <h1>INHABITENT JURNAL</h1>
-<!-- INhabet Jurnal -->
+<!-- INhabet Jurnal.. -->
 
 <div class="inhabit-jurnal">
 <?php
