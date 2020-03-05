@@ -1,38 +1,40 @@
 <?php get_header(); ?>
 
-
-<h1>Shop Stuff..</h1>
+<div class = "jurnal-menu">
+<h1>SHOP STAFF</h1>
 
 <!-- Start Menu Post -->
 
 <?php 
 $terms = get_terms(array(
 'taxonomy' => 'product-type',
+'title' => 'title',
 'hide_empty'=>false
 ));
 
-
-// echo "<pre>";
-// print_r($terms);
-// echo"</pre>";
+    // echo "<pre>";
+    // print_r($terms);
+    // echo"</pre>";
 ?>
 
-<div class = "jurnal-menu">
+<div class = "post-menu">
 <?php
 foreach($terms as $term) : 
     $menu_item = $term->name;?>
-    <div class = "post-menu">
-        <?php 
-         echo "<p>";
-         echo $menu_item;?>  
-     <?php echo "</p>";
-    ?>
-   </div>
+ 
+    <a href="<?php the_permalink()?>"> 
+       <?php echo "<p>";
+         echo $menu_item;
+         echo "</p>";?> 
+        </a>
+        <p><?php the_title()?></p>
     <?php endforeach;?>
     <!-- End of <div class="shop-sruff"> -->
+    </div>
    <!-- End Menu Post -->
+   
 </div>
-<hr>
+<!-- <hr class="hr"> -->
 
 <section class="container-archive-page"> 
 <?php if( have_posts() ) :
@@ -47,8 +49,7 @@ foreach($terms as $term) :
     <?php echo '$' . get_field('price');?>
     </span>
 
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
+     <?php the_content(); ?>
     </div>
     <!-- Loop ends -->
     <?php endwhile;?>

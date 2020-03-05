@@ -11,7 +11,7 @@
     <h1><?php the_title(); ?></h2>
     <h2><?php the_date();?>/0 Comments</h3>
     </div>
-    <?php echo wp_trim_words(get_the_content(), 40, '[...]'); ?>
+    <p><?php echo wp_trim_words(get_the_content(), 40, '[...]'); ?></p>
     
  
     

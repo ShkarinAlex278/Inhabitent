@@ -44,20 +44,22 @@
     p {
       line-height: 1.5em;
       height: auto;
-      #more {
-        display: none;
-      }
+      padding: 10px 0px;
     }
 
     button {
       width: 18%;
       display: block;
-      margin-left: 30%;
+      //   margin-left: 30%;
       background-color: white;
       border: 1px solid #0a0a0a;
       padding: 10px;
       color: black;
-      margin: 10px;
+      margin-bottom: 50px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
   }
 }

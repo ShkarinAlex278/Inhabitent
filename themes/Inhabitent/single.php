@@ -1,16 +1,19 @@
 <?php get_header(); ?>
 
 <div class="single-page">    
-<div class="single-journal-page">
+<!-- <div class="single-journal-page"> -->
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-<div class="single-picture-content" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>)">
-    <h1><?php the_title(); ?></h2>
-    <h2><?php the_date();?>/0 Comments</h3>
-    </div>
+<span class = 'single-picture-image'>
+<img src="<?php echo get_the_post_thumbnail_url();?>">
+</span>
+<div class = "single-picture-content">
+    <h1><?php the_title();?></h1>
+   
+    
     <?php the_content()?>
     <div class="bottons">
     <button> LIKE </button> 

@@ -57,8 +57,7 @@ table {
 header {
   width: 1120px;
   height: auto;
-  position: fixed;
-  margin: 5px 20px; }
+  position: fixed; }
 
 .main-menu {
   display: -webkit-box;
@@ -498,21 +497,34 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px; }
   .jurnal-menu p {
     margin: 10px;
     color: #1c7d6b; }
-
-hr {
-  margin: 40px 0px;
-  color: white;
-  border-top: 3px dashed lightgrey; }
+  .jurnal-menu .post-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .jurnal-menu .post-menu a {
+      text-decoration: none;
+      color: #1c7d6b; }
 
 .container-archive-page {
   width: 100%;
@@ -895,18 +907,19 @@ hr {
         padding: 5px; }
     .home-page .journal-page p {
       line-height: 1.5em;
-      height: auto; }
-      .home-page .journal-page p #more {
-        display: none; }
+      height: auto;
+      padding: 10px 0px; }
     .home-page .journal-page button {
       width: 18%;
       display: block;
-      margin-left: 30%;
       background-color: white;
       border: 1px solid #0a0a0a;
       padding: 10px;
       color: black;
-      margin: 10px; }
+      margin-bottom: 50px; }
+      .home-page .journal-page button a {
+        text-decoration: none;
+        color: black; }
 
 .search-result {
   width: 100%;
@@ -961,18 +974,23 @@ hr {
       border-top: solid 0.1px #e2dfdf; }
 
 .single-page {
-  width: 100%;
+  width: 1120px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-top: solid 0.1px #e2dfdf;
-  padding: 30px; }
-  .single-page .single-journal-page {
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 0.1px #e2dfdf; }
+  .single-page .single-picture-content {
     width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -983,46 +1001,33 @@ hr {
             flex-direction: column;
     padding: 30px;
     color: white; }
-    .single-page .single-journal-page .single-picture-content {
-      width: 100%;
-      height: 551px;
-      background-position: bottom;
-      background-size: 850px;
-      background-repeat: no-repeat;
+    .single-page .single-picture-content h1 {
+      color: black;
+      font-size: 36px; }
+    .single-page .single-picture-content p {
+      line-height: 1.5em;
+      height: auto;
+      color: black;
+      padding: 10px; }
+    .single-page .single-picture-content .bottons {
+      width: auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .single-page .single-journal-page .single-picture-content h1 {
-        width: 50%;
-        background-color: #1c7d6b;
-        color: white;
-        font-size: 36px;
-        margin-top: 5%; }
-      .single-page .single-journal-page .single-picture-content h2 {
-        width: 40%;
-        background-color: #1c7d6b;
-        color: white;
-        font-size: 24px;
-        margin-left: 58.7%;
-        margin-top: 40%;
-        text-align: right;
-        padding: 5px; }
-    .single-page .single-journal-page p {
-      line-height: 1.5em;
-      height: auto;
-      color: #1c7d6b; }
-
-.bottons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between; }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .single-page .single-picture-content .bottons button {
+        display: block;
+        width: 100px;
+        background-color: white;
+        border: 1px solid #0a0a0a;
+        padding: 10px;
+        color: black;
+        margin: 3px; }
