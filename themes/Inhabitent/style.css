@@ -56,7 +56,8 @@ table {
 
 header {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: fixed; }
 
 .main-menu {
   display: -webkit-box;
