@@ -6,10 +6,15 @@ function inhabitant_files() {
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
     wp_enqueue_style('font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     wp_enqueue_script('inhabitant_search_toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array('jquery'),NULL, true);
-    if(is_page('Home', 'About')){ 
+    if(is_page('Home')){ 
+        
         global $wp_query;           
         wp_enqueue_script('main', get_template_directory_uri() . '/build/js/main.min.js');        
-    }
+    } 
+    // else if(is_page('About')){ 
+    //     global $wp_query;           
+    //     wp_enqueue_script('main', get_template_directory_uri() . '/build/js/main.min.js');        
+    // } 
 }
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');

@@ -1,25 +1,27 @@
 header {
-  width: 100%;
+  width: 1120px;
   height: auto;
   position: fixed;
+  margin: 5px 20px;
 }
 
 .main-menu {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   .logo {
-    width: 20%;
+    width: 10%;
     padding-left: 30px;
   }
   ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
-    padding-right: 30px;
+    padding-left: 60%;
   }
   ul a {
     padding: 15px;
@@ -28,24 +30,45 @@ header {
     margin: 0px;
     text-decoration: none;
   }
+
+  .search-toggle {
+    padding-left: 30px;
+    .fa {
+      color: white;
+    }
+  }
+
+  fieldset {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    label {
+      display: none;
+    }
+    #search-submit {
+      display: none;
+    }
+  }
 }
 
 .main-green {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   .logo {
     width: 20%;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
-    padding-right: 30px;
+    padding-left: 60%;
   }
   ul a {
     padding: 15px;
@@ -53,5 +76,24 @@ header {
     font-size: 20px;
     margin: 0px;
     text-decoration: none;
+  }
+  .search-toggle {
+    padding-left: 30px;
+    .fa {
+      color: #1c7d6b;
+    }
+  }
+
+  fieldset {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    label {
+      display: none;
+    }
+    #search-submit {
+      display: none;
+    }
   }
 }

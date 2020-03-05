@@ -55,9 +55,10 @@ table {
   border-spacing: 0; }
 
 header {
-  width: 100%;
+  width: 1120px;
   height: auto;
-  position: fixed; }
+  position: fixed;
+  margin: 5px 20px; }
 
 .main-menu {
   display: -webkit-box;
@@ -67,14 +68,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 10px; }
   .main-menu .logo {
-    width: 20%;
+    width: 10%;
     padding-left: 30px; }
   .main-menu ul {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,13 +87,32 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-right: 30px; }
+    padding-left: 60%; }
   .main-menu ul a {
     padding: 15px;
     color: white;
     font-size: 20px;
     margin: 0px;
     text-decoration: none; }
+  .main-menu .search-toggle {
+    padding-left: 30px; }
+    .main-menu .search-toggle .fa {
+      color: white; }
+  .main-menu fieldset {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-line-pack: justify;
+        align-content: space-between; }
+    .main-menu fieldset label {
+      display: none; }
+    .main-menu fieldset #search-submit {
+      display: none; }
 
 .main-green {
   display: -webkit-box;
@@ -102,14 +122,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 10px; }
   .main-green .logo {
     width: 20%;
-    padding-left: 30px; }
+    padding-left: 20px; }
   .main-green ul {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,13 +141,32 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-right: 30px; }
+    padding-left: 60%; }
   .main-green ul a {
     padding: 15px;
     color: #1c7d6b;
     font-size: 20px;
     margin: 0px;
     text-decoration: none; }
+  .main-green .search-toggle {
+    padding-left: 30px; }
+    .main-green .search-toggle .fa {
+      color: #1c7d6b; }
+  .main-green fieldset {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-line-pack: justify;
+        align-content: space-between; }
+    .main-green fieldset label {
+      display: none; }
+    .main-green fieldset #search-submit {
+      display: none; }
 
 footer {
   width: 100%;
@@ -814,7 +853,8 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: solid 0.1px #e2dfdf; }
+  border-top: solid 0.1px #e2dfdf;
+  padding: 30px; }
   .home-page .journal-page {
     width: 70%;
     display: -webkit-box;
@@ -878,7 +918,8 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: solid 0.1px #e2dfdf; }
+  border-top: solid 0.1px #e2dfdf;
+  padding: 30px; }
   .search-result .results {
     width: 70%;
     display: -webkit-box;
@@ -929,7 +970,8 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: solid 0.1px #e2dfdf; }
+  border-top: solid 0.1px #e2dfdf;
+  padding: 30px; }
   .single-page .single-journal-page {
     width: 70%;
     display: -webkit-box;
@@ -971,7 +1013,8 @@ hr {
         padding: 5px; }
     .single-page .single-journal-page p {
       line-height: 1.5em;
-      height: auto; }
+      height: auto;
+      color: #1c7d6b; }
 
 .bottons {
   display: -webkit-box;

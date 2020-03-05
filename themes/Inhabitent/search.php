@@ -17,11 +17,12 @@
     <?php endwhile;?>  
             <hr>
             <button> 1 </button> 
-            </div>
+            
 <?php else : ?>
         <p>No posts found</p>
+        
 <?php endif;?>
-
+</div>
 <div class="contact-info">
 <?php dynamic_sidebar('sidebar-info'); ?> 
 </div>
