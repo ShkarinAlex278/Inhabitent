@@ -249,10 +249,6 @@ h2 {
 
 // Archive Product
 
-h1 {
-  font-size: 30px;
-}
-
 .jurnal-menu {
   width: 100%;
   display: flex;
@@ -267,6 +263,9 @@ h1 {
   //     height: 0.5px;
   //     color: lightgrey;
   //   }
+  h1 {
+    font-size: 30px;
+  }
   p {
     margin: 10px;
     color: #1c7d6b;

@@ -490,9 +490,6 @@ h2 {
   padding: 10px 40px;
   margin: 20px 0px; }
 
-h1 {
-  font-size: 30px; }
-
 .jurnal-menu {
   width: 100%;
   display: -webkit-box;
@@ -512,6 +509,8 @@ h1 {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   margin-bottom: 10px; }
+  .jurnal-menu h1 {
+    font-size: 30px; }
   .jurnal-menu p {
     margin: 10px;
     color: #1c7d6b; }
