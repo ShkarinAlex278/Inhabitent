@@ -28,10 +28,11 @@ $terms = get_terms(array(
 'taxonomy' => 'product-type',
 'hide_empty'=>false
 ));
+$name = get_queried_object_id();
 
-// echo "<pre>";
-// print_r($terms);
-// echo"</pre>";
+echo "<pre>";
+print_r($name);
+echo"</pre>";
 
 
 foreach($terms as $term) : 

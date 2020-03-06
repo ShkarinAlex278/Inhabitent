@@ -64,12 +64,15 @@ foreach($terms as $term) :
 ?>
 <section class="container-archive-page"> 
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+<a href="<?php the_permalink() ?>"> 
 <div class="product">
+
     <?php the_post_thumbnail(); ?>    
     <span class = "price">       
     <?php echo the_title() .'...$' . get_field('price');?>
     </span>
-         </div>
+    
+         </div></a>
    
 <?php endforeach; wp_reset_postdata(); ?>
 </section> 
