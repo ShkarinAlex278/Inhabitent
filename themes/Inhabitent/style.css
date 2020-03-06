@@ -259,7 +259,8 @@ footer {
   footer .back {
     font-size: 20px;
     color: white;
-    text-align: center; }
+    text-align: center;
+    padding: 30px; }
 
 @font-face {
   font-family: 'Raleway Medium Italic';
