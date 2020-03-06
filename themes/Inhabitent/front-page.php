@@ -29,6 +29,11 @@ $terms = get_terms(array(
 'hide_empty'=>false
 ));
 
+// echo "<pre>";
+// print_r($terms);
+// echo"</pre>";
+
+
 foreach($terms as $term) : 
     $file_name = $term->slug . '.svg';?>
     <div class = "post-catecory">
@@ -60,8 +65,6 @@ foreach($terms as $term) :
     // echo "<pre>";
     // print_r($args);
     // echo"</pre>";
-
-
 ?>
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 <div class = "jurnals">

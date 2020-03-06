@@ -415,7 +415,7 @@ h2 {
   height: 140px;
   border: solid 2px lightgrey;
   color: #1c7d6b;
-  font-size: 32px; }
+  font-size: 30px; }
   .topic-jurnal .journal-date {
     font-size: 16px;
     color: black; }
@@ -527,30 +527,44 @@ h1 {
       color: #1c7d6b; }
 
 .container-archive-page {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 50px; }
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  padding: 20px 20px 50px 20px;
+  margin: 0px 10px; }
 
 .product {
-  width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  font-size: 18px; }
 
 .product img {
   width: 100%;
-  height: auto;
-  padding: 0px; }
-
-.price {
-  font-size: 24px; }
+  height: 190px;
+  padding: 0px;
+  background-size: cover; }
 
 .container-about-page {
   width: 100%;
