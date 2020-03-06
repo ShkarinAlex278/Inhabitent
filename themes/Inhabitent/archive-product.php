@@ -8,13 +8,12 @@
 <?php 
 $terms = get_terms(array(
 'taxonomy' => 'product-type',
-'title' => 'title',
 'hide_empty'=>false
 ));
-
     // echo "<pre>";
     // print_r($terms);
     // echo"</pre>";
+
 ?>
 
 <div class = "post-menu">
@@ -22,12 +21,12 @@ $terms = get_terms(array(
 foreach($terms as $term) : 
     $menu_item = $term->name;?>
  
-    <a href="<?php the_permalink()?>"> 
+    <a href="<?php echo $term->taxonomy?>/<?php echo $term->slug?>"> 
        <?php echo "<p>";
          echo $menu_item;
          echo "</p>";?> 
         </a>
-        <p><?php the_title()?></p>
+  
     <?php endforeach;?>
     <!-- End of <div class="shop-sruff"> -->
     </div>

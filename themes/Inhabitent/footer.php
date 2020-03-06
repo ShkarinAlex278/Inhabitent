@@ -4,7 +4,8 @@
  <!-- <h1>Footer...</h1> -->
  <div class="foorer-content">
  <?php dynamic_sidebar('sidebar-info'); ?> 
- <img class = 'logo' src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-text.svg">
+
+ <img class = 'logoFooter' src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-text.svg">
  </div>
  <p class = 'back' >COPYRIGHT &copy 2020 INHABITENT</p>
 </footer>

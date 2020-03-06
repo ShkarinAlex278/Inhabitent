@@ -57,6 +57,11 @@ foreach($terms as $term) :
     );
    $product_posts = get_posts( $args ); // returns an array of posts
 
+    // echo "<pre>";
+    // print_r($args);
+    // echo"</pre>";
+
+
 ?>
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 <div class = "jurnals">
