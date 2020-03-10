@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="home-page">
     <div class="journal-page">
-<h1>OOPS! THAT PAGE CAN'T BE FOUND.</h1>
+<h2>OOPS! THAT PAGE CAN'T BE FOUND.</h2>
 <p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
 
 <div class="header-search">

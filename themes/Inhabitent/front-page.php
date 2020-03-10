@@ -5,10 +5,12 @@
     while( have_posts() ) :
         the_post(); ?>
 
-<span class = 'font-page'>
-<img src="<?php echo get_template_directory_uri()?>/assets/images/home-hero3.jpg">
+
+
+<div class = 'font-page' style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/home-hero3.jpg"?>)">
+
 <img class = 'logotype' src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-full.svg">
-</span>
+</div>
         <h1 class = "shop-stuff-h1">SHOP STUFF</h1>
         <div class="shop-sruff">  
     
@@ -73,8 +75,8 @@ foreach($terms as $term) :
    <?php the_post_thumbnail() ?>
         <div class = "topic-jurnal"> 
             <p class = "journal-date"> <?php the_date()?> / 0 Comments</p>
-   <?php the_title() ?>
-   <?php echo get_terms() ?>
+   <h2><?php the_title() ?></h2>
+   
    <button type='button'> 
    <a href="<?php the_permalink() ?>">  
    READ ENTRY
@@ -97,8 +99,7 @@ foreach($terms as $term) :
     );
    $product_posts = get_posts( $args ); // returns an array of posts
    $counter = 1;
-   $containerName = 'Item' . $counter; 
-   
+   $containerName = 'Item' . $counter;    
 ?>
 
 <div class="content-adventure">
@@ -112,11 +113,16 @@ foreach($terms as $term) :
         <button type = "click">
         <a href="<?php the_permalink() ?>">    
         READ ME
+        </button> 
         </a>
-</button> 
-         </div>
-   
-<?php endforeach; wp_reset_postdata(); ?>
+    </div>
+  <?php endforeach; wp_reset_postdata(); ?>
+
+        <a href="<?php the_permalink() ?>">   
+        <button class = "moreAdventure" type = "click"> 
+        MORE ADVENTURE
+        </button> 
+        </a>
 </div>
 <!-- ADVENTURES End -->
 

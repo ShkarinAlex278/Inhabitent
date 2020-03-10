@@ -1,6 +1,6 @@
 .single-page {
   //   background-color: blue;
-  width: 1120px;
+  width: $width_website;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -8,21 +8,24 @@
   align-items: center;
   border-top: solid 0.1px rgb(226, 223, 223);
   .single-picture-content {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     padding: 30px;
-    color: white;
+    color: $background_colour;
     h1 {
-      color: black;
       font-size: 36px;
+      color: $font_base_color;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web;
     }
 
     p {
-      line-height: 1.5em;
+      //line-height: 1.5em;
       height: auto;
-      color: black;
       padding: 10px;
+      color: $font_base_color;
+      line-height: 1.75em;
     }
     .bottons {
       width: auto;
@@ -30,22 +33,33 @@
       flex-direction: row;
       align-content: space-around;
       align-items: flex-start;
-      button {
+      a {
         display: block;
-        width: 100px;
+        width: 80px;
         background-color: white;
         border: 1px solid #0a0a0a;
-        padding: 10px;
-        color: black;
+        padding: 10px 20px;
+        color: $font_base_color;
         margin: 3px;
+        text-decoration: none;
+        text-align: center;
       }
+      // a {
+      //   display: block;
+      //   width: 100px;
+      //   background-color: white;
+      //   border: 1px solid #0a0a0a;
+      //   padding: 10px;
+      //   color: $font_base_color;
+      //   margin: 3px;
+      // }
     }
   }
 }
 
 // Single Page Start
 .singl-page {
-  width: 1120px;
+  width: $width_website;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -61,7 +75,8 @@
     }
   }
   .single-content {
-    margin: 10px;
+    margin: 0px;
+    padding: 0px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -69,19 +84,26 @@
     align-items: flex-start;
     align-content: space-between;
     h2 {
-      padding: 20px 0px;
+      padding: 0px;
       font-size: 30px;
-      color: red;
+      color: $orange_brand_colour;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web Bold';
+      margin-top: 30px;
     }
     h3 {
-      padding: 10px 0px;
+      padding: 20px 0px;
       font-size: 20px;
+      font-family: 'Novecento Sans Web Bold';
     }
     p {
       width: 80%;
       height: 55%;
-      padding: 10px 0px;
-      font-size: 20px;
+      padding: 0px 0px;
+      font-size: 16px;
+      color: $font_base_color;
+      line-height: 1.75;
+      margin-bottom: 10px;
     }
 
     .bottons {
@@ -96,8 +118,19 @@
         background-color: white;
         border: 1px solid #0a0a0a;
         padding: 10px;
-        color: black;
+        color: $font_base_color;
         margin: 3px;
+      }
+      a {
+        display: block;
+        width: 100px;
+        background-color: white;
+        border: 1px solid #0a0a0a;
+        padding: 10px;
+        color: $font_base_color;
+        margin: 3px;
+        text-decoration: none;
+        text-align: center;
       }
     }
   }

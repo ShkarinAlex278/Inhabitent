@@ -16,9 +16,9 @@
     
     <?php the_content()?>
     <div class="bottons">
-    <button> LIKE </button> 
-    <button> TWEEN </button> 
-    <button> PIN </button> 
+    <a href="www.facebook.com"><i class="fab fa-facebook-f"> </i>  LIKE</i></a>
+    <a href="www.twitter.com"><i class="fab fa-twitter"> </i>  TWEET</a>
+    <a href="www.pintrest.com"><i class="fab fa-pinterest"> </i>  PIN</a>
     </div>
     <?php endwhile;?>
     </div>

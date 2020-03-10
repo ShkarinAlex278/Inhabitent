@@ -1,8 +1,9 @@
 footer {
   width: 100%;
   height: auto;
+  font-family: 'Novecento Sans Web';
   .foorer-content {
-    color: #ffffff;
+    color: $background_colour;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,6 +12,7 @@ footer {
     padding: 15px 40px;
     text-decoration: none;
     list-style-type: none;
+    font-size: 14px;
   }
 
   img {
@@ -27,9 +29,14 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: space-between;
-    line-height: 1.5em;
+    line-height: 1.75;
+    .address {
+    display: none;
+    }
     h2 {
-      color: goldenrod;
+      color: $orange_brand_colour;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web;
     }
     .contact-icons {
       width: 100px;
@@ -39,6 +46,7 @@ footer {
       padding: 5px;
       width: 20%;
       p {
+        color: $font_base_color;
         padding: 5px;
       }
     }
@@ -51,10 +59,12 @@ footer {
     justify-content: flex-start;
     align-content: space-between;
     align-items: flex-start;
-    line-height: 1.5em;
+    line-height: 1.75;
     padding: 10px;
     h2 {
-      color: goldenrod;
+      color: $orange_brand_colour;
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web';
     }
     .fa {
       width: 2px;
@@ -65,7 +75,7 @@ footer {
   }
   .back {
     font-size: 20px;
-    color: white;
+    color: $background_colour;
     text-align: center;
     padding: 30px;
   }

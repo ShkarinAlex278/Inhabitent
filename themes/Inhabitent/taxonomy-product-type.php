@@ -5,33 +5,34 @@
 $name = $term->name;
 $terms = get_the_terms(get_the_ID(),'product-type');
 ?>
-
+<div class = "type-post-menu">
 <?php foreach ( $terms as $term ) : setup_postdata( $post ); ?>
 
    <h1><?php echo $term->name; ?></h1> 
+   <h3><?php echo $term->description; ?></h3>
  
 <?php endforeach; wp_reset_postdata(); ?>
-
-
-      <div class="post-menu">    
+</div>
+    </div>
+    <section class="type-archive-page">  
+           
 <?php if( have_posts() ) :
-
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
-        the_post(); ?>
+        the_post(); ?>       
+    <a class="type-product" href="<?php the_permalink() ?>"> 
+    <?php the_post_thumbnail(); ?>    
+    <span class = "price">       
+    <?php echo the_title() .'...$' . get_field('price');?>
+    </span>
+    </a>
  
-<h2><?php the_title()?></h2>
-
-    
-    <!-- Loop ends -->
     <?php endwhile;?>
-    
-
-
+    </section> 
 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-        </div>
-    </div>
+
+
 <?php get_footer();?>

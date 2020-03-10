@@ -1,9 +1,9 @@
 (function($) {
   console.log('main 1 working');
   console.log(window);
-  $navHeight = 700;
+  $navHeight = 460;
   $myLogo = $('.logo');
-  $logoWhite =
+  $logowhite =
     window.location +
     'wp-content/themes/Inhabitent/assets/images/logos/inhabitent-logo-tent-white.svg';
   $logoGreen =
@@ -19,7 +19,7 @@
     } else {
       $('nav').removeClass('main-green');
       $('nav').addClass('main-menu');
-      $('.logo').attr('src', $logoWhite);
+      $('.logo').attr('src', $logowhite);
     }
   });
 })(jQuery);

@@ -20,31 +20,38 @@
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
-
-      h1 {
-        width: 50%;
-        background-color: #1c7d6b;
-        color: white;
-        font-size: 36px;
-        margin-top: 5%;
+      align-content: space-between;
+      h2 {
+        width: max-content;
+        background-color: $green_brand_colour;
+        color: $background_colour;
+        font-size: 24px;
+        margin-top: 3%;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web;
+        text-align: left;
+        padding: 5px;
       }
 
-      h2 {
-        width: 40%;
-        background-color: #1c7d6b;
-        color: white;
-        font-size: 24px;
-        margin-left: 58.7%;
-        margin-top: 40%;
+      h3 {
+        width: 290px;
+        background-color: $green_brand_colour;
+        color: $background_colour;
+        font-size: 18px;
+        margin-left: 60.68%;
+        margin-top: 58.1%;
         text-align: right;
         padding: 5px;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web;
       }
     }
 
     p {
-      line-height: 1.5em;
+      line-height: 1.75em;
       height: auto;
       padding: 10px 0px;
+      color: $font_base_color;
     }
 
     button {
@@ -54,11 +61,11 @@
       background-color: white;
       border: 1px solid #0a0a0a;
       padding: 10px;
-      color: black;
+      color: $font_base_color;
       margin-bottom: 50px;
       a {
         text-decoration: none;
-        color: black;
+        color: $font_base_color;
       }
     }
   }

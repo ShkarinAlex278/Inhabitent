@@ -3,8 +3,11 @@ remove_action('shutdown', 'wp_ob_end_flush_all', 1); //My added
 //Adds script and stylesheets
 function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
-    wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
-    wp_enqueue_style('font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    // wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+    wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+    // wp_enqueue_style('font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     wp_enqueue_script('inhabitant_search_toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array('jquery'),NULL, true);
     if(is_page('Home')){ 
         
@@ -121,5 +124,4 @@ function inhabitent_adjust_product($query) {
 }
 
 add_action('pre_get_posts', 'inhabitent_adjust_product');
-
 ?>

@@ -17,6 +17,7 @@
     <?php endwhile;?>  
             <hr>
             <button> 1 </button> 
+        
             
 <?php else : ?>
         <p>No posts found</p>

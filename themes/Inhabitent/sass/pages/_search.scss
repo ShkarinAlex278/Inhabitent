@@ -15,23 +15,28 @@
 
     h1 {
       width: 50%;
-      background-color: #1c7d6b;
-      color: white;
+      background-color: $green_brand_colour;
+      color: $background_colour;
       font-size: 36px;
       margin-top: 5%;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web;
     }
 
     h2 {
       width: 100%;
-      color: #1c7d6b;
+      color: $green_brand_colour;
       font-size: 24px;
       text-align: left;
       padding: 5px;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web;
     }
 
     p {
-      line-height: 1.5em;
+      //line-height: 1.5em;
       height: auto;
+      color: $font_base_color;
     }
 
     button {
@@ -41,11 +46,11 @@
       background-color: white;
       border: 1px solid #0a0a0a;
       padding: 10px;
-      color: black;
+      color: $font_base_color;
       margin: 10px;
       a {
         text-decoration: none;
-        color: black;
+        color: $font_base_color;
       }
     }
 

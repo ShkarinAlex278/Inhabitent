@@ -18,7 +18,7 @@ $terms = get_terms(array(
 ?>
 
 
-<div class = "post-menu">
+    <div class = "post-menu">
 <?php
 foreach($terms as $term) : 
     $menu_item = $term->name;?>

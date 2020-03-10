@@ -21,14 +21,17 @@
   }
   h1 {
     position: relative;
-    color: white;
+    color: $background_colour;
     font-size: 48px;
     padding-top: 23%;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web;
   }
 
   p {
+    color: $font_base_color;
     width: 65%;
-    line-height: 1.5em;
+    //line-height: 1.5em;
     padding: 10px 0px;
   }
 

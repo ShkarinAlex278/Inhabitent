@@ -15,13 +15,6 @@ Text Domain: inhabitant
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
-
 @import 'components/buttons';
 @import 'components/carousel';
 @import 'components/slider';
@@ -32,6 +25,13 @@ Text Domain: inhabitant
 @import 'pages/shop';
 @import 'pages/search';
 @import 'pages/single';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
 
 @import 'themes/theme';
 @import 'themes/admin';
