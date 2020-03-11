@@ -23,7 +23,7 @@ The Inhabitent project, like other projects, had the main task of developing des
 One of the main issues I ran into was figuring out how to target pages individually so that I could write styles without affecting every page of a particular type. This prompted me to familiarize myself with the WordPress body classes, as well as with the SASS nesting functionality, which was a very convenient tool for writing certain style rules.
 This project allowed me to gain a deeper understanding of working with WordPress and template navigation. The project was useful to me in terms of global design using WordPress. Working with WordPress gave me more flexibility and options when creating a site.
 
-It is written:
-Alexander Shkarin
-Date:
-March 2020
+Written by:
+Alex Shkarin
+
+Date: March.2020
