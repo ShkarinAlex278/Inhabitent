@@ -1,6 +1,5 @@
-// Journal Page
+
 .search-result {
-  // background-color: blue;
   margin-top: 40px;
   height: auto;
   display: flex;
@@ -11,8 +10,6 @@
 .serch-for {
   h1 {
   text-align: left;
-  // border-bottom: $solid_border;
-  // padding: 10px 30px;
   }
   margin-top: 20px;
   }
@@ -51,20 +48,21 @@
       padding: 20px;
     }
 
-    button {
+    a {
       width: 23%;
       display: block;
-      margin-left: 20px;
+     text-align: center;
       background-color: white;
       border: 1px solid #0a0a0a;
       padding: 10px;
-      color: $font_base_color;
-      // margin: 10px;
-      a {
-        text-decoration: none;
-        color: $font_base_color;
-      }
+      color: $font_base_color;      
+        text-decoration: none;         
       margin-bottom: 30px;
+      &:hover {
+        background-color: $green_brand_colour;
+        border: 1px solid $green_brand_colour; 
+        color:$background_colour;     
+          }   
     }
   }
 
@@ -72,4 +70,3 @@
     margin-top: 0px;
   }
 }
-// End of Journal Page

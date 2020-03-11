@@ -1,17 +1,15 @@
 <?php get_header(); ?>
-
 <div class="single-page">    
-<!-- <div class="single-journal-page"> -->
+<div class="single-content">
 <?php if( have_posts() ) :
 
-//The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-<span class = 'single-picture-image'>
-<img src="<?php echo get_the_post_thumbnail_url();?>">
-</span>
-<div class = "single-picture-content">
-    <h1><?php the_title();?></h1>
+
+<div class="single-picture-content" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>)">
+    <h2><?php the_title(); ?></h2>
+    <h3><?php the_date();?>/0 Comments</h3>
+    </div>
    
     
     <?php the_content()?>
@@ -20,6 +18,7 @@
     <a href="www.twitter.com"><i class="fab fa-twitter"> </i>  TWEET</a>
     <a href="www.pintrest.com"><i class="fab fa-pinterest"> </i>  PIN</a>
     </div>
+
     <?php endwhile;?>
     </div>
   
@@ -27,7 +26,10 @@
         <p>No posts found</p>
 <?php endif;?>
 
+<div class="contact-info">
+<?php dynamic_sidebar('sidebar-info'); ?> 
 
+</div>
 </div>
     
 <?php get_footer();?>

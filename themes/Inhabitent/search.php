@@ -12,11 +12,10 @@
         the_post(); ?>
            <h2> <?php the_title(); ?></h2>                     
                 <p><?php echo wp_trim_words(get_the_content(), 40, '[...]'); ?></p> 
-                <button type = "click">
-        <a href="<?php the_permalink() ?>">    
+                      <a href="<?php the_permalink() ?>">    
         READ MORE &#8594
         </a>
-    </button> 
+   
     <?php endwhile;?>     
             
 <?php else : ?>

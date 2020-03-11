@@ -4,20 +4,19 @@
 <div class="journal-page">
 <?php if( have_posts() ) :
 
-//The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
 <div class="picture-content" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>)">
     <h2><?php the_title(); ?></h2>
     <h3><?php the_date();?>/0 Comments</h3>
     </div>
-    <p><?php echo wp_trim_words(get_the_content(), 40, '[...]'); ?></p>
+    <p><?php echo wp_trim_words(get_the_content(), 50, '[...]'); ?></p>
     
  
     
-    <button>    <a href="<?php the_permalink() ?>">  
+     <a href="<?php the_permalink() ?>">  
     READ MORE &#8594
-   </a> </button> 
+   </a>
   <!-- Contact Info -->
    <!-- Loop ends -->
     <?php endwhile;?>

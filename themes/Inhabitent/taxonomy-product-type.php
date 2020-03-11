@@ -17,7 +17,6 @@ $terms = get_the_terms(get_the_ID(),'product-type');
     <section class="type-archive-page">  
            
 <?php if( have_posts() ) :
-//The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>       
     <a class="type-product" href="<?php the_permalink() ?>"> 
