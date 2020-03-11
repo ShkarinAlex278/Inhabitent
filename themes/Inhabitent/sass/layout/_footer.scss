@@ -1,12 +1,13 @@
 footer {
   width: 100%;
-  height: auto;
+  height: 250px;
   font-family: 'Novecento Sans Web';
+  
   .foorer-content {
     color: $background_colour;
     display: flex;
     flex-direction: row;
-    align-items: center;
+     align-items: center;
     justify-content: center;
     align-content: space-around;
     padding: 15px 40px;
@@ -21,6 +22,28 @@ footer {
     padding-bottom: 10%;
   }
 
+  h2 {
+    color: $orange_brand_colour;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+  }
+
+  p {
+    color: white;
+    padding: 5px;
+  
+  .icon {
+    width: 150%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+     i {
+       padding-right: 10px;
+     }
+  }
+  }
+
+
   #text-4 {
     width: 30%;
     height: 150px;
@@ -33,23 +56,7 @@ footer {
     .address {
     display: none;
     }
-    h2 {
-      color: $orange_brand_colour;
-      text-transform: uppercase;
-      font-family: Novecento Sans Web;
-    }
-    .contact-icons {
-      width: 100px;
-      display: flex;
-      flex-direction: row;
-      align-content: space-between;
-      padding: 5px;
-      width: 20%;
-      p {
-        color: $font_base_color;
-        padding: 5px;
-      }
-    }
+
   }
   #text-6 {
     width: 30%;
@@ -61,22 +68,14 @@ footer {
     align-items: flex-start;
     line-height: 1.75;
     padding: 10px;
-    h2 {
-      color: $orange_brand_colour;
-      text-transform: uppercase;
-      font-family: 'Novecento Sans Web';
-    }
-    .fa {
-      width: 2px;
-    }
   }
   #archives-4 {
     display: none;
   }
   .back {
-    font-size: 20px;
+    font-size: 16px;
     color: $background_colour;
     text-align: center;
-    padding: 30px;
+   margin-top: 20px;
   }
 }

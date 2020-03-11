@@ -8,14 +8,16 @@
     width: 70%;
     display: flex;
     flex-direction: column;
-   
+    padding: 20px;
     h2 {
       width: 100%;
       font-size: 24px;
-      margin-top: 5%;
+      margin: 0px;
+      margin: 20px 0px;
       color: $font_base_color;
       text-transform: uppercase;
-      font-family: Novecento Sans Web;
+      font-family: Novecento Sans Web Bold;
+      text-align: left;
     }
 
     iframe {
@@ -27,6 +29,7 @@
     p {
       height: auto;
       color: $font_base_color;
+      line-height: 1.75;
     }
 
     input[type='submit'] {
@@ -133,6 +136,8 @@
   }
 }
 
+
+
 .contact-info {
   width: 20%;
   display: flex;
@@ -160,7 +165,12 @@
       display: none;      
     }
     p {
-      margin: 5px;
+      margin: 10px;
+      padding: 5px;
+      line-height: 1.75;
+      .icon {
+        display: none;
+      }
           }
     .phone,
     .email {
@@ -168,11 +178,8 @@
     }
     .address {
       color: $font_base_color;
-      br {
-        display: none;
-      }
     }
-
+  
     .contact-icons {
       width: 100px;
       display: flex;
@@ -199,6 +206,10 @@
     .fa {
       width: 2px;
     }
+    p {
+      // margin: 10px;
+      padding: 5px;
+      line-height: 1.75;}
   }
   #archives-4 {
     width: 100%;
@@ -212,7 +223,16 @@
     padding: 10px;
     a {
       color: $green_brand_colour;
-      text-decoration: none;
+      font-family: 'Merriweather Light';
+      font-size: 14px;
+      line-height: 1.75;
+    }
+    ul {
+      color: $green_brand_colour;
+      text-decoration: none;   
+        padding: 5px;
+        
+    
     }
   }
 }
