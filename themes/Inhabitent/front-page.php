@@ -39,7 +39,7 @@ foreach($terms as $term) :
          echo "<p>";
          echo $term->description;?>  
          <a href="<?php echo $term->taxonomy?>/<?php echo $term->slug?>"> 
-   <button type='button'> <?php echo $term->name;?> STUFF</button> </a>
+   <?php echo $term->name;?> STUFF</> </a>
     <?php echo "</p>";
     ?>
    </div>
@@ -71,11 +71,11 @@ foreach($terms as $term) :
             <p class = "journal-date"> <?php the_date()?> / 0 Comments</p>
    <h2><?php the_title() ?></h2>
    
-   <button type='button'> 
+  
    <a href="<?php the_permalink() ?>">  
    READ ENTRY
    </a>
-</button> 
+
   
         </div>
    </div>

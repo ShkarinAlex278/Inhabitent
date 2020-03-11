@@ -182,7 +182,9 @@ h1, h2, h3 {
   font-family: 'Novecento Sans Web'; }
 
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  font-family: 'Novecento Sans Web';
+  font-size: 16px; }
 
 p {
   font-family: 'Merriweather Light'; }
@@ -231,6 +233,9 @@ h1 {
 
 .post-catecory {
   width: 25%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,30 +249,26 @@ h1 {
   margin: 10px;
   border: solid 1px #a1a1a1;
   border-top: solid 3px #a1a1a1; }
-
-.post-catecory img {
-  width: 20%;
-  margin: 5px; }
-
-.post-catecory p {
-  margin: 10px;
-  text-align: center;
-  color: #404040;
-  padding: 15px; }
-
-.post-catecory button {
-  display: block;
-  margin-left: 30%;
-  background-color: #248a83;
-  padding: 10px;
-  color: #ffffff;
-  border-width: 0px;
-  margin: 10px;
-  margin-left: 30%;
-  text-decoration: none; }
-
-.post-catecory a {
-  text-decoration: none; }
+  .post-catecory img {
+    width: 20%;
+    margin: 5px; }
+  .post-catecory p {
+    margin: 10px;
+    text-align: center;
+    color: #404040; }
+    .post-catecory p a {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      text-decoration: none;
+      display: block;
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #ffffff;
+      padding: 10px;
+      text-decoration: none;
+      margin: 15px;
+      margin-left: 25%; }
 
 .inhabit-jurnal {
   width: 100%;
@@ -323,7 +324,12 @@ h2 {
     font-size: 14px;
     color: #404040;
     padding: 10px 20px 0px 20px; }
-  .topic-jurnal button {
+  .topic-jurnal a {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-decoration: none;
+    color: #404040;
     display: block;
     margin-left: 30%;
     background-color: #ffffff;
@@ -332,14 +338,10 @@ h2 {
     color: #404040;
     text-decoration: none;
     margin: 10px; }
-    .topic-jurnal button a {
-      text-decoration: none;
-      color: #404040; }
-    .topic-jurnal button:hover {
+    .topic-jurnal a:hover {
       background-color: #248a83;
-      border: 1px solid #248a83; }
-      .topic-jurnal button:hover a {
-        color: #ffffff; }
+      border: 1px solid #248a83;
+      color: #ffffff; }
 
 .content-adventure {
   width: 95%;
