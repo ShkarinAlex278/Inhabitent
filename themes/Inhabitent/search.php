@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 <div class="search-result">
+    <div class="serch-for">
+        <h1>search results for: </h1>
+    
     <div class="results">
 <?php if( have_posts() ) :
 
@@ -14,18 +17,17 @@
         READ MORE &#8594
         </a>
     </button> 
-    <?php endwhile;?>  
-            <hr>
-            <button> 1 </button> 
-        
+    <?php endwhile;?>     
             
 <?php else : ?>
         <p>No posts found</p>
         
 <?php endif;?>
 </div>
+</div>
 <div class="contact-info">
 <?php dynamic_sidebar('sidebar-info'); ?> 
+
 </div>
 
 </div>

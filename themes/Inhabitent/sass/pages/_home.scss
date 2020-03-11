@@ -11,6 +11,10 @@ h1,h2,h3 {
   font-family: 'Novecento Sans Web';
 }
 
+a {
+  background-color: transparent;
+}
+
 p{
   font-family: 'Merriweather Light';
 }
@@ -36,21 +40,19 @@ button {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Merriweather Web';
+  margin: 30px;
 }
 
 .shop-stuff-h1 {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  // font-family: 'Merriweather Light';
-  
   margin: 30px;
   margin-top: 0px;
   padding: 0px;
-  // font-weight: normal;
-  // font-style: normal;
+
 }
 
 .shop-sruff {
@@ -134,7 +136,7 @@ h2 {
   font-size: 30px;
   margin: 0px;
   padding: 0px;
-  margin-top: -8.5px;
+  margin-top: -4px;
   h2 {
     font-family: 'Novecento Sans Web Bold';
     margin: 5px;
@@ -160,6 +162,14 @@ h2 {
       text-decoration: none;
       color: $font_base_color;
     }
+    &:hover {
+      background-color: $green_brand_colour;
+      border: 1px solid $green_brand_colour;
+      
+      a {
+        color:$background_colour;
+      }
+  }
   }
 }
 
@@ -168,13 +178,15 @@ h2 {
   height: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 250px);
   grid-gap: 10px;
   margin-bottom: 10px;
   margin: 20px;
+
   p {
     color: $background_colour;
-    font-size: 24px;
-    padding: 40px;
+    font-size: 28px;
+    padding: 20px;
   }
   .Item1 {
     background-position: bottom;
@@ -206,20 +218,23 @@ h2 {
   }
 
   a {
+    width: max-content;
     text-decoration: none;
     color: $background_colour;
-    button {
+    border: 1px solid #f8f4f4;
       display: block;
       margin-left: 30%;
-      background-color: transparent;
-      border: 1px solid #f8f4f4;
-      color: $background_colour;
       margin: 10px;
       font-size: $font_size;
-      padding: 10px 40px;
+      padding: 10px 20px;
+      font-family: 'Novecento Sans Web';
+      &:hover {
+        background-color: $green_brand_colour;
+        border: 1px solid $green_brand_colour;
+        color:$background_colour;
     }
   }
-
+}
   button {
     display: block;
     width: max-content;
@@ -231,7 +246,7 @@ h2 {
     padding: 10px 20px;
     margin: 0px 30px;
   }
-}
+
 
 // Archive Product
 

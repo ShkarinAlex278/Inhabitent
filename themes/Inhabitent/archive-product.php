@@ -10,14 +10,10 @@ $terms = get_terms(array(
 'taxonomy' => 'product-type',
 'hide_empty'=>false
 ));
-
     // echo "<pre>";
     // print_r($terms);
     // echo"</pre>";
-
 ?>
-
-
     <div class = "post-menu">
 <?php
 foreach($terms as $term) : 
@@ -28,31 +24,20 @@ foreach($terms as $term) :
        <?php echo "<p>";
          echo $menu_item;
          echo "</p>";?> 
-
-        </a>
-  
+        </a>  
     <?php endforeach;?>
-    <!-- End of <div class="shop-sruff"> -->
-    </div>
-   <!-- End Menu Post -->
-   
+    </div>   
 </div>
-<!-- <hr class="hr"> -->
-
-
 <?php if( have_posts() ) :
 
-//The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
 
-    <!-- Loop ends -->
     <?php endwhile;?>
 
     <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
    
 <?php
    $args = array( 

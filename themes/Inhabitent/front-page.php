@@ -24,18 +24,12 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
 <?php 
 $terms = get_terms(array(
 'taxonomy' => 'product-type',
 'hide_empty'=>false
 ));
 $name = get_queried_object_id();
-
-echo "<pre>";
-print_r($name);
-echo"</pre>";
-
 
 foreach($terms as $term) : 
     $file_name = $term->slug . '.svg';?>
@@ -110,21 +104,14 @@ foreach($terms as $term) :
     <?php $counter++;?>
 
     <p><?php the_title()?></p>
-        <button type = "click">
+        <!-- <button type = "click"> -->
         <a href="<?php the_permalink() ?>">    
         READ ME
-        </button> 
+        <!-- </button>  -->
         </a>
     </div>
-  <?php endforeach; wp_reset_postdata(); ?>
-
-        <a href="<?php the_permalink() ?>">   
-        <button class = "moreAdventure" type = "click"> 
-        MORE ADVENTURE
-        </button> 
-        </a>
+  <?php endforeach; wp_reset_postdata(); ?>        
 </div>
-<!-- ADVENTURES End -->
 
     
 <?php get_footer();?>

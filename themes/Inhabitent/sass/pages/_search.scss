@@ -1,17 +1,27 @@
 // Journal Page
 .search-result {
-  //   background-color: blue;
-  width: 100%;
+  // background-color: blue;
+  margin-top: 40px;
   height: auto;
   display: flex;
   flex-direction: row;
-  border-top: solid 0.1px rgb(226, 223, 223);
-  padding: 30px;
+  border-top: $solid_border;
+  padding: 0px 10px;
+  
+.serch-for {
+  h1 {
+  text-align: left;
+  // border-bottom: $solid_border;
+  // padding: 10px 30px;
+  }
+  margin-top: 20px;
+  }
+
   .results {
     width: 70%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    margin: 30px;
 
     h1 {
       width: 50%;
@@ -34,30 +44,32 @@
     }
 
     p {
-      //line-height: 1.5em;
+      line-height: 1.75;
       height: auto;
       color: $font_base_color;
+      font-size: 18px;
+      padding: 20px;
     }
 
     button {
-      width: 18%;
+      width: 23%;
       display: block;
-      margin-left: 30%;
+      margin-left: 20px;
       background-color: white;
       border: 1px solid #0a0a0a;
       padding: 10px;
       color: $font_base_color;
-      margin: 10px;
+      // margin: 10px;
       a {
         text-decoration: none;
         color: $font_base_color;
       }
+      margin-bottom: 30px;
     }
+  }
 
-    hr {
-      //   color: red;
-      border-top: solid 0.1px rgb(226, 223, 223);
-    }
+  .contact-info {
+    margin-top: 0px;
   }
 }
 // End of Journal Page
