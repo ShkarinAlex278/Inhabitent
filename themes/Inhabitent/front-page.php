@@ -1,11 +1,8 @@
 <?php get_header(); ?>
 <?php if( have_posts() ) :
 
-//The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-
-
 
 <div class = 'font-page' style="background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(<?php echo get_template_directory_uri() . "/assets/images/home-hero3.jpg"?>)">
 
@@ -15,8 +12,7 @@
         <div class="shop-sruff">  
     
     <?php the_content(); ?>
-    
-    <!-- Loop ends -->
+
     <?php endwhile;?>
 
     <?php the_posts_navigation();?>
@@ -44,11 +40,9 @@ foreach($terms as $term) :
     ?>
    </div>
     <?php endforeach;?>
-    <!-- End of <div class="shop-sruff"> -->
     </div> 
 
     <h1>INHABITENT JOURNAL</h1>
-<!-- INhabet Jurnal.. -->
 
 <div class="inhabit-jurnal">
 <?php
@@ -57,11 +51,7 @@ foreach($terms as $term) :
        'order' => 'ASC',
        'numberposts' => 3
     );
-   $product_posts = get_posts( $args ); // returns an array of posts
-
-    // echo "<pre>";
-    // print_r($args);
-    // echo"</pre>";
+   $product_posts = get_posts( $args );
 ?>
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 <div class = "jurnals">
@@ -80,10 +70,8 @@ foreach($terms as $term) :
         </div>
    </div>
 <?php endforeach; wp_reset_postdata(); ?>
-</div> <!-- End Jurnal div -->
+</div> 
 
-
-<!-- ADVENTURES start -->
 <h1> LATEST ADVENTURES</h1>
 <?php
    $args = array( 
@@ -91,7 +79,7 @@ foreach($terms as $term) :
        'order' => 'ASC',
        'numberposts' => 4
     );
-   $product_posts = get_posts( $args ); // returns an array of posts
+   $product_posts = get_posts( $args ); 
    $counter = 1;
    $containerName = 'Item' . $counter;    
 ?>
@@ -104,14 +92,11 @@ foreach($terms as $term) :
     <?php $counter++;?>
 
     <p><?php the_title()?></p>
-        <!-- <button type = "click"> -->
         <a href="<?php the_permalink() ?>">    
         READ ME
-        <!-- </button>  -->
         </a>
     </div>
   <?php endforeach; wp_reset_postdata(); ?>        
 </div>
-
     
 <?php get_footer();?>
